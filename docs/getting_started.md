@@ -44,21 +44,29 @@ SCM from its official [Web site](https://git-scm.com/downloads).
 
 ## Step 3: install Python
 
-This course requires both Python 2 and 3 to be installed.
+This course requires both Python 2.7 and Python 3.4 to be installed to give a
+taste of differences this two flavors can give.
+
+To check if the right python version is properly installed you can type
+following:
+
+```
+python2 --version
+python3 --version
+```
 
 ### Linux
 
 All Linux distributions comes with Bash. GIT instead could be installed using
-distribution specific package manager. For example in Ubuntu you can type
+distribution specific package manager. For example in Ubuntu 14.04 you can type
 following:
 
 ```
-sudo apt-get install python2 python3
+sudo apt-get install python2.7 python2.7-dev python3.4 python3.4-dev
 ```
 
 ### OSX, Windows and other operative systems
 
-On other OSs you can download Python from its ufficial
+On other OSs you can download Python from its official
 [Web site](https://www.python.org/downloads/).
-
 

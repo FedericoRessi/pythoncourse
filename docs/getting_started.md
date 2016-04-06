@@ -7,13 +7,16 @@ active.
 To access to this course you also have to install GIT, Bash, Python and
 some python packages. Please follow following steps in the given order.
 
-## Step 1: Create a personal account on BitBucket
+## Step 1: create a personal account on BitBucket
 
 The course is hosted on [BitBucket](http://www.bitbucket.org) Web site.
 You need to register personal account in order to access to it. You can create
 one [here](https://bitbucket.org/account/signup/).
 Once you have created your own accout please ask to project organizer to
 send you an invitation to join the online course.
+
+You can write to:
+- Federico Ressi <federico.ressi_[at]_intel.com> (please replace _[at]_ with @)
 
 ## Step 2: install GIT and Bash
 
@@ -105,7 +108,7 @@ python2.7 -m pip --version
 python3.4 -m pip --version
 ```
 
-## Step 5: install last version of Tox
+## Step 5: install Tox
 
 Tox is used to execute tests to evaluate you exercise are properly written.
 To install and keep up to date Tox and PIP you have to execute following:

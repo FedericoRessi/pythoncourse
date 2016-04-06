@@ -1,0 +1,9 @@
+/coverage.xml
+/htmlcov/
+/python_class_16.04.01.egg-info/
+__pycache__
+.cache/
+.coverage
+.tox/
+*.pyc
+*.pyo

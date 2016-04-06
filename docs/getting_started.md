@@ -51,8 +51,8 @@ To check if the right python version is properly installed you can type
 following:
 
 ```
-python2 --version
-python3 --version
+python2.7 --version
+python3.4 --version
 ```
 
 ### Linux
@@ -70,3 +70,52 @@ sudo apt-get install python2.7 python2.7-dev python3.4 python3.4-dev
 On other OSs you can download Python from its official
 [Web site](https://www.python.org/downloads/).
 
+## Step 4: install PIP
+
+PIP is required to install Python software packages published by good big
+open source Python comunity. Some useful instructions how to install it can be
+found [here](https://pip.pypa.io/en/stable/installing/)
+
+### Linux
+
+Almost all Linux distributions provides some package for PIP. It is instead
+preferible to use the last public version. To get installation script you
+can use WGET:
+
+```
+wget https://bootstrap.pypa.io/get-pip.py
+```
+
+### All OSs including Linux
+
+[Download get-pip.py](https://bootstrap.pypa.io/get-pip.py) script and execute
+it using python 2.7 and python 3.4.
+
+```
+python2.7 get-pip.py --user
+python2.7 -m pip install -U --user pip
+python3.4 get-pip.py --user
+python3.4 -m pip install -U --user pip
+```
+
+Finally check that pip is working:
+
+```
+python2.7 -m pip --version
+python3.4 -m pip --version
+```
+
+## Step 5: install last version of Tox
+
+Tox is used to execute tests to evaluate you exercise are properly written.
+To install and keep up to date Tox and PIP you have to execute following:
+
+```
+pip install -U --user tox
+```
+
+Finally check that tox is working:
+
+```
+tox --version
+```

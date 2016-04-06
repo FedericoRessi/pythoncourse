@@ -15,6 +15,6 @@ class TestSetup(unittest.TestCase):
         assert version in ['2.7', '3.4']
 
     def test_default_python_interpreter_version(self):
-        from sh import bash
-        version = str(bash('-c', 'python -c "import sys; print(sys.version)"'))
+        from sh import python
+        version = str(python('-c', 'import sys; print(sys.version)'))
         assert sys.version == version.rsplit('\n', 1)[0]

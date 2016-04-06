@@ -1,6 +1,7 @@
 CHANGES
 =======
 
+* python executable version
 * Create infrastructure for test execution
 * Minor corrections and organizer contact
 * Document how to install PIP and Tox

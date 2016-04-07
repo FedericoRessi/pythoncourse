@@ -30,6 +30,6 @@ def recursive_function(level):
     """
 
     try:
-        return recursive_function(level + 1)
+        return recursive_function(level)
     except RuntimeError:
         return level

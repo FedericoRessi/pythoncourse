@@ -145,6 +145,12 @@ fressi for "Federico Ressi".
 ## Step 7: create a pull request
 
 Make your first change by editing your student details on file STUDENT.md
+Then commit it:
+
+```
+git commit "Fill student details."
+git push
+```
 
 Enters on Bitbucket [course page](https://bitbucket.org/intelshannonpythoncourse/python-course-1604)
 and [create a new pull request](https://bitbucket.org/intelshannonpythoncourse/python-course-1604/pull-requests/new).

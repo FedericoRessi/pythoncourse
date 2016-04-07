@@ -142,8 +142,9 @@ git push --set-upstream origin <my-branch-name>
 replacing <my-branch-name> with your Intel user ID. For example I would use
 fressi for "Federico Ressi".
 
-
 ## Step 7: create a pull request
+
+Make your first change by editing your student details on file STUDENT.md
 
 Enters on Bitbucket [course page](https://bitbucket.org/intelshannonpythoncourse/python-course-1604)
 and [create a new pull request](https://bitbucket.org/intelshannonpythoncourse/python-course-1604/pull-requests/new).

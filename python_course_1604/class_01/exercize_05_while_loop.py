@@ -24,6 +24,8 @@ def do_something():
 def print_work_results():
     """Function that loops until has_something_to_do() returns True
     calling do_something() function and printing its results.
+
+    Please use while construct.
     """
 
     while has_something_to_do():

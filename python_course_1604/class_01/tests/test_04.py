@@ -12,7 +12,10 @@ import python_course_1604.class_01.exercize_04_stack_limit as exercize
 class TestStackLimit(unittest.TestCase):
 
     def test_failing_function(self):
-        assert recursive_function(-1) == exercize.measure_stack_limit()
+
+        result = exercize.measure_stack_limit()
+
+        assert recursive_function(-1) == result
 
 
 def recursive_function(level):

@@ -1,6 +1,9 @@
 CHANGES
 =======
 
+* Document how to work on exercises
+* Update README after moving project repository
+* Create exercize for if statement
 * Write hello world exercize
 * python executable version
 * Create infrastructure for test execution

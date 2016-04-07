@@ -16,7 +16,8 @@ Once you have created your own accout please ask to project organizer to
 send you an invitation to join the online course.
 
 You can write to:
-- Federico Ressi <federico.ressi_[at]_intel.com> (please replace _[at]_ with @)
+
+- Federico Ressi <federico.ressi _at_ intel.com> (please replace _at_ with @)
 
 ## Step 2: install GIT and Bash
 
@@ -121,4 +122,39 @@ Finally check that tox is working:
 
 ```
 tox --version
+```
+
+## Step 6: clone course repository
+
+From your terminal enter in the folder of your where you want to work and clone
+this course repository and enter inside it.
+
+```
+git clone https://federico_ressi_at_intel@bitbucket.org/intelshannonpythoncourse/python-course-1604.git
+cd python-course-1604
+```
+
+Before you start doing any change you have to create your own branch:
+```
+git checkout -b <my-branch-name>
+git push --set-upstream origin <my-branch-name>
+```
+replacing <my-branch-name> with your Intel user ID (for example fressi for Federico Ressi)
+
+You can now start working on exercises found on folder python_course_1604/exercises
+To validate your work you type:
+
+```
+tox
+```
+
+Test execution will have success only when you would have completed all exercises.
+Exercises you didn't touched will be skipped.
+
+To submit your exercises for review you have to commit your changes
+an then and pussh them to origin repository in your new branch.
+
+```
+git commit
+git push
 ```

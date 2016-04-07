@@ -9,7 +9,7 @@ import unittest
 class TestHelloWorld(unittest.TestCase):
 
     def setUp(self):
-        from python_course_1604.exercize_02_if_statement import clamp
+        from python_course_1604.class_01.exercize_02_if_statement import clamp
         self.clamp = clamp
 
     def test_when_x_is_smaller_than_min_value(self):

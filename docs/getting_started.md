@@ -130,7 +130,7 @@ From your terminal enter in the folder of your where you want to work and clone
 this course repository and enter inside it.
 
 ```
-git clone https://federico_ressi_at_intel@bitbucket.org/intelshannonpythoncourse/python-course-1604.git
+git clone https://bitbucket.org/intelshannonpythoncourse/python-course-1604.git
 cd python-course-1604
 ```
 
@@ -139,9 +139,21 @@ Before you start doing any change you have to create your own branch:
 git checkout -b <my-branch-name>
 git push --set-upstream origin <my-branch-name>
 ```
-replacing <my-branch-name> with your Intel user ID (for example fressi for Federico Ressi)
+replacing <my-branch-name> with your Intel user ID. For example I would use
+fressi for "Federico Ressi".
 
-You can now start working on exercises found on folder python_course_1604/exercises
+
+## Step 7: create a pull request
+
+Enters on Bitbucket [course page](https://bitbucket.org/intelshannonpythoncourse/python-course-1604)
+and [create a new pull request](https://bitbucket.org/intelshannonpythoncourse/python-course-1604/pull-requests/new).
+
+On the left side in the drop down box you have to chose your working branch.
+On the right side in the drop down box you have to leave it as "master" branch.
+
+## Step 8: complete exercizes
+
+You can now start working on exercises found on folder python_course_1604
 To validate your work you type:
 
 ```

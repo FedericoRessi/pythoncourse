@@ -14,7 +14,7 @@ class TestSetup(unittest.TestCase):
         version = sys.version.split()[0].rsplit('.', 1)[0]
         assert version in ['2.7', '3.4']
 
-    def test_default_python_interpreter_version(self):
-        from sh import python
+    def test_python_interpreter_version(self):
+        from sh import python  # noqa
         version = str(python('-c', 'import sys; print(sys.version)'))
         assert sys.version == version.rsplit('\n', 1)[0]

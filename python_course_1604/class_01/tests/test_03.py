@@ -9,7 +9,10 @@ import mock
 
 import python_course_1604.class_01.exercize_03_capture_exception as exercize
 
+from python_course_1604.tests.utils import skip_if_exercize_not_started
 
+
+@skip_if_exercize_not_started(exercize)
 class TestCaptureException(unittest.TestCase):
 
     def _mock_function(self, obj, name, *args, **kwargs):

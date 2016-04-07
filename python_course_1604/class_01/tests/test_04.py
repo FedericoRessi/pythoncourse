@@ -8,7 +8,10 @@ import unittest
 
 import python_course_1604.class_01.exercize_04_stack_limit as exercize
 
+from python_course_1604.tests.utils import skip_if_exercize_not_started
 
+
+@skip_if_exercize_not_started(exercize)
 class TestStackLimit(unittest.TestCase):
 
     def test_failing_function(self):

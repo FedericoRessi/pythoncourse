@@ -8,7 +8,10 @@ import unittest
 
 import python_course_1604.class_01.exercize_02_if_statement as exercize
 
+from python_course_1604.tests.utils import skip_if_exercize_not_started
 
+
+@skip_if_exercize_not_started(exercize)
 class TestIfStatement(unittest.TestCase):
 
     def test_when_x_is_smaller_than_min_value(self):

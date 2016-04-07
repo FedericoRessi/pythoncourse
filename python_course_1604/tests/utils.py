@@ -20,8 +20,7 @@ def skip_if_exercize_not_started(exercize):
     from sh import git
 
     diff = str(git('--no-pager', 'diff', 'master', '--', path))
-    print(diff)
-    if diff:
+    if not diff:
         return unittest.skip('Exercize not started: ' + exercize.__file__)
 
     return dont_skip

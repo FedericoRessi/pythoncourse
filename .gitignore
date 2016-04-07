@@ -1,5 +1,6 @@
 /coverage.xml
 /htmlcov/
+/report/
 *.egg-info
 __pycache__
 .cache/

@@ -173,7 +173,8 @@ On the right side in the drop down box you have to leave it as "master" branch.
 
 ## Step 9: complete exercizes
 
-You can now start working on exercises found on folder [python_course_1604](../python_course_1604/).
+You can now start working on exercises found on folder
+[python_course_1604](../python_course_1604/class_01).
 To validate your work you can type from the main folder of the project:
 
 ```

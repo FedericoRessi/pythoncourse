@@ -165,7 +165,7 @@ git commit "Fill student details."
 git push
 ```
 
-Enters on Bitbucket [course page](https://bitbucket.org/intelshannonpythoncourse/python-course-1604)
+Enters on GitHub [course page](https://github.com/FedericoRessi/pythoncourse)
 and [create a new pull request](https://bitbucket.org/intelshannonpythoncourse/python-course-1604/pull-requests/new).
 
 On the left side in the drop down box you have to chose your working branch.

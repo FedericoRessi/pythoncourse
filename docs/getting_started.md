@@ -166,7 +166,7 @@ git push
 ```
 
 Enters on GitHub [course page](https://github.com/FedericoRessi/pythoncourse)
-and [create a new pull request](https://bitbucket.org/intelshannonpythoncourse/python-course-1604/pull-requests/new).
+and create a [new pull request](https://github.com/FedericoRessi/pythoncourse/pull/new/master).
 
 On the left side in the drop down box you have to chose your working branch.
 On the right side in the drop down box you have to leave it as "master" branch.

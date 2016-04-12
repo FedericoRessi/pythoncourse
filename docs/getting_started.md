@@ -18,7 +18,11 @@ permissions.
 
 For having support you can write to:
 
-- Federico Ressi <federico.ressi _at_ intel.com> (please replace _at_ with @)
+```
+Federico Ressi <federico.ressi _at_ intel.com>
+```
+
+please replace _at_ with @
 
 ## Step 2: install GIT and Bash
 

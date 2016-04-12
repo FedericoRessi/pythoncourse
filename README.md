@@ -6,7 +6,7 @@ This project is the pratical session of a presential/online course organized
 at Intel Shannon site.
 
 ### Editions
-- [16.04 (April 2016)](https://bitbucket.org/intelshannonpythoncourse/python-course-1604)
+- [16.04 (April 2016)](https://github.com/FedericoRessi/pythoncourse)
 
 ### Authors
 - Federico Ressi <federico.ressi _at_ intel.com>
@@ -14,7 +14,7 @@ at Intel Shannon site.
 ### Web site
 
 This course is hosted here:
-- [https://bitbucket.org/intelshannonpythoncourse/python-course-1604](https://bitbucket.org/intelshannonpythoncourse/python-course-1604)
+- [https://github.com/FedericoRessi/pythoncourse](https://github.com/FedericoRessi/pythoncourse)
 
 #### NOTE: to access the course you have to be registered as explained below in getting started section.
 

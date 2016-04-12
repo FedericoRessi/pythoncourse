@@ -4,7 +4,7 @@ This pratical version of the course is going to be online. Therefore you need
 a personal computer with installed a Web browser and an Internet connection
 active.
 
-To access to this course you also have to install GIT, Bash, Python and
+To access to this course you also have to install Git, Bash, Python and
 some python packages. Please follow following steps in the given order.
 
 ## Step 1: create a personal account on GitHub
@@ -19,19 +19,19 @@ permissions.
 For having support you can write to:
 
 ```
-Federico Ressi <federico.ressi _at_ intel.com>
+Federico Ressi <federico.ressi at intel.com>
 ```
 
 please replace _at_ with @
 
-## Step 2: install GIT and Bash
+## Step 2: install Git and Bash
 
-GIT and Bash are required to downlowand your copy of the course, to run
-tests and to publish your homework to this Web site.
+Git and Bash are required to downlowand your copy of the course, to run
+tests and to publish your homework to this course web site.
 
 ### Linux
 
-All Linux distributions comes with Bash. GIT instead could be installed using
+All Linux distributions comes with Bash. Git instead could be installed using
 distribution specific package manager. For example in Ubuntu you can type
 following:
 
@@ -48,12 +48,12 @@ Git version from its official [Web site](https://git-scm.com/downloads).
 
 ### Windows and other OSs
 
-On Window platform you can have both GIT and Bash installed by running GIT
+On Window platform you can have both Git and Bash installed by running Git
 SCM installer from its official [Web site](https://git-scm.com/downloads).
 
-## Step 3: configure GIT
+## Step 3: configure Git
 
-Once installed, to configure GIT you should follow one of following guides:
+Once installed, to configure Git you should follow one of following guides:
 - [First-Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) - by Git SCM
 - [Set Up Git](https://help.github.com/articles/set-up-git/) - by GitHub
 
@@ -73,7 +73,7 @@ python3.4 --version
 
 ### Linux
 
-All Linux distributions comes with Bash. GIT instead could be installed using
+All Linux distributions comes with Bash. Git instead could be installed using
 distribution specific package manager. For example in Ubuntu 14.04 you can type
 following:
 
@@ -173,8 +173,8 @@ On the right side in the drop down box you have to leave it as "master" branch.
 
 ## Step 9: complete exercizes
 
-You can now start working on exercises found on folder python_course_1604
-To validate your work you type:
+You can now start working on exercises found on folder [python_course_1604](python_course_1604/).
+To validate your work you can type from the main folder of the project:
 
 ```
 tox

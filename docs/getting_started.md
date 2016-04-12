@@ -7,15 +7,16 @@ active.
 To access to this course you also have to install GIT, Bash, Python and
 some python packages. Please follow following steps in the given order.
 
-## Step 1: create a personal account on BitBucket
+## Step 1: create a personal account on GitHub
 
-The course is hosted on [BitBucket](http://www.bitbucket.org) Web site.
+This course is hosted on [GitHub](http://www.bitbucket.org) Web site.
 You need to register personal account in order to access to it. You can create
-one [here](https://bitbucket.org/account/signup/).
-Once you have created your own accout please ask to project organizer to
-send you an invitation to join the online course.
+one [here](https://github.com/join?source=header-home).
+The course is release under open source licence. To download it, do your
+exercises and publish it back on the site you shouldn't require special
+permissions.
 
-You can write to:
+For having support you can write to:
 
 - Federico Ressi <federico.ressi _at_ intel.com> (please replace _at_ with @)
 
@@ -39,17 +40,24 @@ Please refer to your distro documentation for more details about this.
 ### OSX
 
 On OSX bash is installed by default as Linux. You can download an up-to-date
-git from its official [Web site](https://git-scm.com/downloads).
+Git version from its official [Web site](https://git-scm.com/downloads).
 
 ### Windows and other OSs
 
-On Window platform you can have both GIT and Bash installed by installing GIT
-SCM from its official [Web site](https://git-scm.com/downloads).
+On Window platform you can have both GIT and Bash installed by running GIT
+SCM installer from its official [Web site](https://git-scm.com/downloads).
 
-## Step 3: install Python
+## Step 3: configure GIT
+
+Once installed, to configure GIT you should follow one of following guides:
+- [First-Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) - by Git SCM
+- [Set Up Git](https://help.github.com/articles/set-up-git/) - by GitHub
+
+
+## Step 4: install Python
 
 This course requires both Python 2.7 and Python 3.4 to be installed to give a
-taste of differences this two flavors can give.
+taste of differences between this two major releases.
 
 To check if the right python version is properly installed you can type
 following:
@@ -74,7 +82,7 @@ sudo apt-get install python2.7 python2.7-dev python3.4 python3.4-dev
 On other OSs you can download Python from its official
 [Web site](https://www.python.org/downloads/).
 
-## Step 4: install PIP
+## Step 5: install PIP
 
 PIP is required to install Python software packages published by good big
 open source Python comunity. Some useful instructions how to install it can be
@@ -109,7 +117,7 @@ python2.7 -m pip --version
 python3.4 -m pip --version
 ```
 
-## Step 5: install Tox
+## Step 6: install Tox
 
 Tox is used to execute tests to evaluate you exercise are properly written.
 To install and keep up to date Tox and PIP you have to execute following:
@@ -124,25 +132,26 @@ Finally check that tox is working:
 tox --version
 ```
 
-## Step 6: clone course repository
+## Step 7: clone course repository
 
 From your terminal enter in the folder of your where you want to work and clone
 this course repository and enter inside it.
 
 ```
-git clone https://bitbucket.org/intelshannonpythoncourse/python-course-1604.git
-cd python-course-1604
+git clone https://github.com/FedericoRessi/pythoncourse.git
+cd pythoncourse
 ```
 
 Before you start doing any change you have to create your own branch:
 ```
-git checkout -b <my-branch-name>
-git push --set-upstream origin <my-branch-name>
+git checkout -b <your-branch-name>
+git push --set-upstream origin <your-branch-name>
 ```
-replacing <my-branch-name> with your Intel user ID. For example I would use
-fressi for "Federico Ressi".
+replacing <your-branch-name> with for example your Intel user ID. For example
+being "Federico Ressi" I would use fressi branch name. Branch names sould not
+contain spaces or any white characters like for exapmple e-mails.
 
-## Step 7: create a pull request
+## Step 8: create a pull request
 
 Make your first change by editing your student details on file STUDENT.md
 Then commit it:
@@ -158,7 +167,7 @@ and [create a new pull request](https://bitbucket.org/intelshannonpythoncourse/p
 On the left side in the drop down box you have to chose your working branch.
 On the right side in the drop down box you have to leave it as "master" branch.
 
-## Step 8: complete exercizes
+## Step 9: complete exercizes
 
 You can now start working on exercises found on folder python_course_1604
 To validate your work you type:

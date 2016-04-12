@@ -9,7 +9,7 @@ some python packages. Please follow following steps in the given order.
 
 ## Step 1: create a personal account on GitHub
 
-This course is hosted on [GitHub](http://www.bitbucket.org) Web site.
+This course is hosted on [GitHub](https://github.com) Web site.
 You need to register personal account in order to access to it. You can create
 one [here](https://github.com/join?source=header-home).
 The course is release under open source licence. To download it, do your

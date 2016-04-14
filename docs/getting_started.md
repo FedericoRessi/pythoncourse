@@ -16,7 +16,8 @@ The course is release under open source licence. To download it, do your
 exercises and publish it back on the site you shouldn't require special
 permissions.
 
-For having support you can write to:
+**Once you have an account send an e-mail to Federico Ressi to allow you to submit
+your works for review**:
 
 ```
 Federico Ressi <federico.ressi at intel.com>

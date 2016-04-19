@@ -23,7 +23,10 @@ your works for review**:
 Federico Ressi <federico.ressi at intel.com>
 ```
 
-please replace _at_ with @
+please replace _at_ with _@_.
+
+**In the text of the e-mail you should specify the
+user name you are going to use on GitHub.**
 
 ## Step 2: install Git and Bash
 
@@ -143,18 +146,24 @@ From your terminal enter in the folder of your where you want to work and clone
 this course repository and enter inside it.
 
 ```
-git clone https://github.com/FedericoRessi/pythoncourse.git
+git clone https://<your-github-username>@github.com/FedericoRessi/pythoncourse.git
 cd pythoncourse
 ```
+
+Please replace _```<your-github-username>```_ with your GitHub username.
 
 Before you start doing any change you have to create your own branch:
 ```
 git checkout -b <your-branch-name>
 git push --set-upstream origin <your-branch-name>
 ```
-replacing <your-branch-name> with for example your Intel user ID. For example
-being "Federico Ressi" I would use fressi branch name. Branch names sould not
-contain spaces or any white characters like for exapmple e-mails.
+replacing _```<your-branch-name>```_ with for example your Intel user ID.
+
+**Above push operation will fail if you didn't received permission for committing
+change to this repository as specified at Step 1.**
+
+A valid branch name could be for example your GiHub user name. Branch names sould not
+contain spaces or any white character.
 
 ## Step 8: create a pull request
 

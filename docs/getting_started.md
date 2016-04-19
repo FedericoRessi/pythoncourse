@@ -125,22 +125,55 @@ python2.7 -m pip --version
 python3.4 -m pip --version
 ```
 
-## Step 6: install Tox
+## Step 6: setup proxy environment variables
+
+Before installing python packages if you are beside corporation proxy (anb I gues you are ;-))
+you should make sure following environment variables are defined.
+```
+export http_proxy=http://<yur-proxy-address>
+export HTTPS_PROXY=http://<yur-proxy-address>
+export https_proxy=http://<yur-proxy-address>
+export no_proxy=127.0.0.1,localhost
+export HTTP_PROXY=http://<yur-proxy-address>
+```
+Above lines has to be defined on your system. If you don't know your proxy
+address you can ask to your collegues, or the network administrator or
+contact the author of this document for help.
+
+As I reccomend you to use bash
+(like the one included with the Git SCM installer for Windows), you can define
+them by editing your ```.bashrc``` file found on your home folder
+(create it if it doesn't exist).
+
+To know where you home folder is please type following from bash:
+```
+echo $HOME
+```
+
+To have environment variable changes applied you should restart bash or
+import .bashrc by typing:
+```
+source ~/.bashrc
+```
+
+To verify environment variables are properly defined you can type following:
+```
+env | grep proxy
+```
+
+## Step 7: install Tox
 
 Tox is used to execute tests to evaluate you exercise are properly written.
 To install and keep up to date Tox and PIP you have to execute following:
-
 ```
 pip install -U --user tox
 ```
-
 Finally check that tox is working:
-
 ```
 tox --version
 ```
 
-## Step 7: clone course repository
+## Step 8: clone course repository
 
 From your terminal enter in the folder of your where you want to work and clone
 this course repository and enter inside it.
@@ -165,7 +198,7 @@ change to this repository as specified at Step 1.**
 A valid branch name could be for example your GiHub user name. Branch names sould not
 contain spaces or any white character.
 
-## Step 8: create a pull request
+## Step 9: create a pull request
 
 Make your first change by editing your student details on file STUDENT.md
 Then commit it:

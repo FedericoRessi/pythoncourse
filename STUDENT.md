@@ -1,3 +1,2 @@
 # Student details
-
-- Full name: <Kevin Laatz>
+Angelika Kosciolek

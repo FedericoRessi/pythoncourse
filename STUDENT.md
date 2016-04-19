@@ -1,3 +1,3 @@
 # Student details
 
-- Full name: <Kevin Laatz>
+- Full name: <please write here your full name>

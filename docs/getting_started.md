@@ -240,3 +240,32 @@ an then and pussh them to origin repository in your new branch.
 git commit
 git push
 ```
+
+## Step 10: keep your repo up to date
+
+It happens that something is updated on this project to solve problems or add more exercises.
+You should try to keep your branch up to date your branch with baster branch you can merge
+or rebase.
+
+### Merge with master branch
+
+```
+git fetch --all
+git merge origin/master 
+```
+
+### Rebase master branch
+
+```
+git fetch --all
+git rebase origin/master 
+```
+
+If you chose to rebase be prepared to have to force pushing future changes
+using _-f_ flag:
+
+```git push -f```
+
+**[GitHub support for rebasing](https://help.github.com/articles/about-git-rebase/)
+could be weird if you have an open pull request for such branch because it alters
+the history of your branch.**

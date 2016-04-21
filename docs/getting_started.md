@@ -78,12 +78,18 @@ python3.4 --version
 ### Linux
 
 All Linux distributions comes with Bash. Git instead could be installed using
-distribution specific package manager. For example in Ubuntu 14.04 you can type
-following:
+distribution specific package manager.
+
+For example in **Ubuntu 14.04** you can install required packages by typing:
 
 ```
 sudo apt-get install python2.7 python2.7-dev python3.4 python3.4-dev
 ```
+
+In some **other Linux** distribution there could be any package for Python 3.4.
+In such case you should be able to compile it following
+[this documentation](https://docs.python.org/3.4/using/unix.html).
+Please note that a C compiler and some other development tool could be required.
 
 ### OSX, Windows and other operative systems
 

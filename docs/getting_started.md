@@ -220,7 +220,7 @@ and create a [new pull request](https://github.com/FedericoRessi/pythoncourse/pu
 On the left side in the drop down box you have to chose your working branch.
 On the right side in the drop down box you have to leave it as "master" branch.
 
-## Step 9: complete exercizes
+## Step 10: complete exercizes
 
 You can now start working on exercises found on folder
 [python_course_1604](../python_course_1604/class_01).
@@ -241,7 +241,7 @@ git commit
 git push
 ```
 
-## Step 10: keep your repo up to date
+## Step 11: keep your repo up to date
 
 It happens that something is updated on this project to solve problems or add more exercises.
 You should try to keep your branch up to date your branch with baster branch you can merge

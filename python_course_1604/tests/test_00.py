@@ -8,8 +8,6 @@ import subprocess
 import sys
 import unittest
 
-import six
-
 
 class TestSetup(unittest.TestCase):
 
@@ -18,8 +16,7 @@ class TestSetup(unittest.TestCase):
         assert version in ['2.7', '3.4']
 
     def test_python_interpreter_version(self):
-        actual_version, _ = six.u(
-            subprocess.check_output(
-                ['python', '-c', 'import sys; print(sys.version)'])
-            ).decode('utf8').rsplit('\n', 1)
+        actual_version, _ = subprocess.check_output(
+            ['python', '-c', 'import sys; print(sys.version)']
+        ).decode('utf8').rsplit('\n', 1)
         assert sys.version == actual_version

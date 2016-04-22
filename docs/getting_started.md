@@ -244,6 +244,8 @@ git commit
 git push
 ```
 
+**For more details how to make exercises please look at [this document](making_exercises.md).**
+
 ## Step 11: keep your repo up to date
 
 It happens that something is updated on this project to solve problems or add more exercises.

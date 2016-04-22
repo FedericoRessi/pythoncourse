@@ -91,6 +91,12 @@ In such case you should be able to compile it following
 [this documentation](https://docs.python.org/3.4/using/unix.html).
 Please note that a C compiler and some other development tool could be required.
 
+Ubuntu 16.04 LTS cames with python3.5 instead of python3.4. I have found [this
+shourt guide](http://tecadmin.net/install-python-3-4-on-ubuntu-and-linuxmint/)
+to install Python 3.4 on that distro. Because of obscures reasons it could be
+that web page is blocked by your proxy. In such case please contact with
+the organizers of the course for help.
+
 ### OSX, Windows and other operative systems
 
 On other OSs you can download Python from its official

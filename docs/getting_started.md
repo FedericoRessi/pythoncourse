@@ -220,6 +220,9 @@ and create a [new pull request](https://github.com/FedericoRessi/pythoncourse/pu
 On the left side in the drop down box you have to chose your working branch.
 On the right side in the drop down box you have to leave it as "master" branch.
 
+**VERY IMPORTANT: never merge your changes into master branch:** students are supposed to
+push changes only to their own working branches.
+
 ## Step 10: complete exercizes
 
 You can now start working on exercises found on folder

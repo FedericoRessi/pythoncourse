@@ -77,25 +77,32 @@ python3.4 --version
 
 ### Linux
 
-All Linux distributions comes with Bash. Git instead could be installed using
-distribution specific package manager.
+Python 2.7 should be the default Python for all modern Linux
+distributions.
 
-For example in **Ubuntu 14.04** you can install required packages by typing:
+In some distributions there could be any package for Python 3.4.
+In such case you should be able to compile it following
+[this documentation](https://docs.python.org/3.4/using/unix.html).
+Please note that a C compiler and some other development tool could be required.
+
+#### Ubuntu 14.04 LTS
+In **Ubuntu 14.04** you can install required packages simply by typing:
 
 ```
 sudo apt-get install python2.7 python2.7-dev python3.4 python3.4-dev
 ```
 
-In some **other Linux** distribution there could be any package for Python 3.4.
-In such case you should be able to compile it following
-[this documentation](https://docs.python.org/3.4/using/unix.html).
-Please note that a C compiler and some other development tool could be required.
-
-Ubuntu 16.04 LTS cames with python3.5 instead of python3.4. I have found [this
+#### Ubuntu 16.04 LTS
+**Ubuntu 16.04** cames with python3.5 instead of python3.4. I have found [this
 shourt guide](http://tecadmin.net/install-python-3-4-on-ubuntu-and-linuxmint/)
 to install Python 3.4 on that distro. Because of obscures reasons it could be
 that web page is blocked by your proxy. In such case please contact with
 the organizers of the course for help.
+
+#### CentOS/RHEL & Fedora
+
+I have found [this guide](http://tecadmin.net/install-python-3-4-on-centos-rhel-fedora/)
+for Red Hat distros family. I never tryied it.
 
 ### OSX, Windows and other operative systems
 

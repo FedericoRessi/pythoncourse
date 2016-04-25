@@ -20,6 +20,7 @@ def is_prime(number):
 def print_primes(max_number):
     """ Prints al prime numbers that are smaller than max_number
 
+    To iterate numbers please use while statement.
     To look if a number is prime it calls is_prime function.
     """
     i = 1

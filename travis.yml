@@ -1,0 +1,16 @@
+language: python
+
+python: 2.7
+
+env:
+  - TOX_ENV=
+
+virtualenv:
+  system_site_packages: true
+
+install:
+  - pip install -U tox coveralls
+
+script:
+  - tox
+  - coveralls --rcfile=.coveragerc

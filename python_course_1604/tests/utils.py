@@ -20,7 +20,7 @@ def skip_if_exercize_not_started(exercize):
 
     try:
         diff = subprocess.check_output(
-            ["git", '--no-pager', 'diff', 'master', '--', path])
+            ["git", '--no-pager', 'diff', 'origin/master', '--', path])
 
     except subprocess.CalledProcessError:
         return dont_skip

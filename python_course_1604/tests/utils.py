@@ -21,7 +21,7 @@ def skip_if_exercize_not_started(exercize):
     diff = subprocess.check_output(
         ["git", '--no-pager', 'diff', 'master', '--', path])
 
-    if not diff:
-        return unittest.skip('Exercize not started: ' + exercize.__file__)
+    if diff:
+        return dont_skip
 
-    return dont_skip
+    return unittest.skip('Exercize not started: ' + exercize.__file__)

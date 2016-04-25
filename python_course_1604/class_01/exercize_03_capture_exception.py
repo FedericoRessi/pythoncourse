@@ -2,6 +2,7 @@
 Created on 6 Apr 2016
 
 @author: Federico Ressi <federico.ressi@intel.com>
+@modified by: Gustav Stedje <gustav.stedje@intel.com>
 '''
 
 # Complete failing_function and capute_exception function to sarisfy documented
@@ -11,6 +12,7 @@ Created on 6 Apr 2016
 def failing_function():
     """Function thar raises a RuntimeError
     """
+    raise RuntimeError
 
 
 def capute_exception():
@@ -23,3 +25,9 @@ def capute_exception():
     If any else exception is raised, then it must let it pass on.
     Please use try: except: else: construct.
     """
+    try:
+        failing_function()
+    except RuntimeError:
+        return False
+    else:
+        return True

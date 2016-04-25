@@ -2,6 +2,7 @@
 branch = True
 omit = */tests/* 
        */site-packages/*
+       */__init__.*
 
 [report]
 # Regexes for lines to exclude from consideration

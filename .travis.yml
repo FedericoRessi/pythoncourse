@@ -13,5 +13,7 @@ install:
   - pip install -U pip tox setuptools coveralls
 
 script:
+  - git --version
+  - git --no-pager diff master
   - tox
   - coveralls --rcfile=.coveragerc

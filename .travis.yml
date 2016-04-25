@@ -9,7 +9,8 @@ virtualenv:
   system_site_packages: true
 
 install:
-  - pip install -U tox coveralls
+  - sudo apt-get install git python-git
+  - pip install -U pip tox setuptools coveralls
 
 script:
   - tox

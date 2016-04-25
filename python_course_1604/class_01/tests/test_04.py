@@ -18,7 +18,8 @@ class TestStackLimit(unittest.TestCase):
 
         result = exercize.measure_stack_limit()
 
-        assert recursive_function(-2) == result
+        expected_result = recursive_function(-2)
+        assert result in range(expected_result - 5, expected_result + 5)
 
 
 def recursive_function(level):

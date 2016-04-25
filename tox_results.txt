@@ -1,0 +1,701 @@
+GLOB sdist-make: C:\Users\slydon\pythoncourse\setup.py
+py27 inst-nodeps: C:\Users\slydon\pythoncourse\.tox\dist\python-course-1604-0.0.1.dev45.zip
+py27 installed: colorama==0.3.7,coverage==4.0.3,funcsigs==1.0.0,mock==2.0.0,ordereddict==1.1,pbr==1.9.1,py==1.4.31,pytest==2.9.1,pytest-cov==2.2.1,python-course-1604==0.0.1.dev45,six==1.10.0
+py27 runtests: PYTHONHASHSEED='188'
+py27 runtests: commands[0] | coverage erase
+py27 runtests: commands[1] | rm -fR .coverage .coverage.*
+py27 runtests: commands[2] | py.test --cov=python_course_1604 --cov-report term-missing --cov-report html --cov-report xml
+============================= test session starts =============================
+platform win32 -- Python 2.7.11, pytest-2.9.1, py-1.4.31, pluggy-0.3.1
+rootdir: C:\Users\slydon\pythoncourse, inifile: tox.ini
+plugins: cov-2.2.1
+collected 21 items / 10 errors
+
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\testpackage\test-requirements.txt s
+python_course_1604\class_01\tests\test_01.py F
+python_course_1604\class_01\tests\test_02.py FFF
+python_course_1604\class_01\tests\test_03.py FFFF
+python_course_1604\class_01\tests\test_04.py F
+python_course_1604\class_01\tests\test_05.py ..FF
+python_course_1604\class_01\tests\test_06.py ..FFF
+python_course_1604\tests\test_00.py F.
+--------------- coverage: platform win32, python 2.7.11-final-0 ---------------
+Name                                                           Stmts   Miss Branch BrPart  Cover   Missing
+----------------------------------------------------------------------------------------------------------
+python_course_1604\__init__.py                                     0      0      0      0   100%   
+python_course_1604\class_01\__init__.py                            0      0      0      0   100%   
+python_course_1604\class_01\exercize_01_hello_world.py             0      0      0      0   100%   
+python_course_1604\class_01\exercize_02_if_statement.py            1      0      2      0   100%   
+python_course_1604\class_01\exercize_03_capture_exception.py       2      0      4      0   100%   
+python_course_1604\class_01\exercize_04_stack_limit.py             3      0      2      0   100%   
+python_course_1604\class_01\exercize_05_while_loop.py              5      0      2      0   100%   
+python_course_1604\class_01\exercize_06_while_break_else.py        5      0      2      0   100%   
+----------------------------------------------------------------------------------------------------------
+TOTAL                                                             16      0     12      0   100%   
+Coverage HTML written to dir report/html/coverage
+Coverage XML written to file report/coverage.xml
+
+=================================== ERRORS ====================================
+____ ERROR collecting .eggs/pbr-1.9.1-py3.4.egg/pbr/tests/test_commands.py ____
+.tox\py27\lib\site-packages\py\_path\local.py:650: in pyimport
+    __import__(modname)
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\__init__.py:16: in <module>
+    import testscenarios
+E   ImportError: No module named testscenarios
+______ ERROR collecting .eggs/pbr-1.9.1-py3.4.egg/pbr/tests/test_core.py ______
+.tox\py27\lib\site-packages\py\_path\local.py:650: in pyimport
+    __import__(modname)
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\__init__.py:16: in <module>
+    import testscenarios
+E   ImportError: No module named testscenarios
+_____ ERROR collecting .eggs/pbr-1.9.1-py3.4.egg/pbr/tests/test_files.py ______
+.tox\py27\lib\site-packages\py\_path\local.py:650: in pyimport
+    __import__(modname)
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\__init__.py:16: in <module>
+    import testscenarios
+E   ImportError: No module named testscenarios
+_____ ERROR collecting .eggs/pbr-1.9.1-py3.4.egg/pbr/tests/test_hooks.py ______
+.tox\py27\lib\site-packages\py\_path\local.py:650: in pyimport
+    __import__(modname)
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\__init__.py:16: in <module>
+    import testscenarios
+E   ImportError: No module named testscenarios
+__ ERROR collecting .eggs/pbr-1.9.1-py3.4.egg/pbr/tests/test_integration.py ___
+.tox\py27\lib\site-packages\py\_path\local.py:650: in pyimport
+    __import__(modname)
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\__init__.py:16: in <module>
+    import testscenarios
+E   ImportError: No module named testscenarios
+___ ERROR collecting .eggs/pbr-1.9.1-py3.4.egg/pbr/tests/test_packaging.py ____
+.tox\py27\lib\site-packages\py\_path\local.py:650: in pyimport
+    __import__(modname)
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\__init__.py:16: in <module>
+    import testscenarios
+E   ImportError: No module named testscenarios
+_____ ERROR collecting .eggs/pbr-1.9.1-py3.4.egg/pbr/tests/test_setup.py ______
+.tox\py27\lib\site-packages\py\_path\local.py:650: in pyimport
+    __import__(modname)
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\__init__.py:16: in <module>
+    import testscenarios
+E   ImportError: No module named testscenarios
+______ ERROR collecting .eggs/pbr-1.9.1-py3.4.egg/pbr/tests/test_util.py ______
+.tox\py27\lib\site-packages\py\_path\local.py:650: in pyimport
+    __import__(modname)
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\__init__.py:16: in <module>
+    import testscenarios
+E   ImportError: No module named testscenarios
+____ ERROR collecting .eggs/pbr-1.9.1-py3.4.egg/pbr/tests/test_version.py _____
+.tox\py27\lib\site-packages\py\_path\local.py:650: in pyimport
+    __import__(modname)
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\__init__.py:16: in <module>
+    import testscenarios
+E   ImportError: No module named testscenarios
+______ ERROR collecting .eggs/pbr-1.9.1-py3.4.egg/pbr/tests/test_wsgi.py ______
+.tox\py27\lib\site-packages\py\_path\local.py:650: in pyimport
+    __import__(modname)
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\__init__.py:16: in <module>
+    import testscenarios
+E   ImportError: No module named testscenarios
+================================== FAILURES ===================================
+___________________ TestHelloWorld.test_hello_world_exists ____________________
+
+self = <test_01.TestHelloWorld testMethod=test_hello_world_exists>
+
+    def test_hello_world_exists(self):
+        output = subprocess.check_output(
+                ['python', '-m',
+                 'python_course_1604.class_01.exercize_01_hello_world']
+        ).decode('utf8')
+>       assert 'Hello world!\n' == output,\
+            "Write a line that prints 'Hello world!'"
+E       AssertionError: Write a line that prints 'Hello world!'
+E       assert 'Hello world!\n' == ''
+E         - Hello world!
+
+python_course_1604\class_01\tests\test_01.py:23: AssertionError
+_______ TestIfStatement.test_when_x_is_between_min_value_and_max_value ________
+
+self = <test_02.TestIfStatement testMethod=test_when_x_is_between_min_value_and_max_value>
+
+    def test_when_x_is_between_min_value_and_max_value(self):
+>       assert 15 == exercize.clamp(15, 10, 20)
+E       AssertionError: assert 15 == None
+E        +  where None = <function clamp at 0x00000000042B1AC8>(15, 10, 20)
+E        +    where <function clamp at 0x00000000042B1AC8> = exercize.clamp
+
+python_course_1604\class_01\tests\test_02.py:24: AssertionError
+____________ TestIfStatement.test_when_x_is_greater_than_max_value ____________
+
+self = <test_02.TestIfStatement testMethod=test_when_x_is_greater_than_max_value>
+
+    def test_when_x_is_greater_than_max_value(self):
+>       assert 20 == exercize.clamp(50, 10, 20)
+E       AssertionError: assert 20 == None
+E        +  where None = <function clamp at 0x00000000042B1AC8>(50, 10, 20)
+E        +    where <function clamp at 0x00000000042B1AC8> = exercize.clamp
+
+python_course_1604\class_01\tests\test_02.py:21: AssertionError
+____________ TestIfStatement.test_when_x_is_smaller_than_min_value ____________
+
+self = <test_02.TestIfStatement testMethod=test_when_x_is_smaller_than_min_value>
+
+    def test_when_x_is_smaller_than_min_value(self):
+>       assert 10 == exercize.clamp(-10, 10, 20)
+E       AssertionError: assert 10 == None
+E        +  where None = <function clamp at 0x00000000042B1AC8>(-10, 10, 20)
+E        +    where <function clamp at 0x00000000042B1AC8> = exercize.clamp
+
+python_course_1604\class_01\tests\test_02.py:18: AssertionError
+_________________ TestCaptureException.test_failing_function __________________
+
+self = <test_03.TestCaptureException testMethod=test_failing_function>
+
+    def test_failing_function(self):
+        with self.assertRaises(RuntimeError):
+>           exercize.failing_function()
+E           AssertionError: RuntimeError not raised
+
+python_course_1604\class_01\tests\test_03.py:26: AssertionError
+____________ TestCaptureException.test_when_no_exception_is_raised ____________
+
+self = <test_03.TestCaptureException testMethod=test_when_no_exception_is_raised>
+
+    def test_when_no_exception_is_raised(self):
+    
+        mocked_failing_function = self._mock_function(
+            exercize, 'failing_function', return_value=None)
+    
+        result = exercize.capute_exception()
+    
+>       assert result is True
+E       AssertionError: assert None is True
+
+python_course_1604\class_01\tests\test_03.py:35: AssertionError
+__________ TestCaptureException.test_when_other_exception_is_raised ___________
+
+self = <test_03.TestCaptureException testMethod=test_when_other_exception_is_raised>
+
+    def test_when_other_exception_is_raised(self):
+    
+        mocked_failing_function = self._mock_function(
+            exercize, 'failing_function', side_effect=ValueError)
+    
+        with self.assertRaises(ValueError):
+>           exercize.capute_exception()
+E           AssertionError: ValueError not raised
+
+python_course_1604\class_01\tests\test_03.py:54: AssertionError
+___________ TestCaptureException.test_when_runtime_error_is_raised ____________
+
+self = <test_03.TestCaptureException testMethod=test_when_runtime_error_is_raised>
+
+    def test_when_runtime_error_is_raised(self):
+    
+        mocked_failing_function = self._mock_function(
+            exercize, 'failing_function', side_effect=RuntimeError)
+    
+        result = exercize.capute_exception()
+    
+>       assert result is False
+E       AssertionError: assert None is False
+
+python_course_1604\class_01\tests\test_03.py:45: AssertionError
+____________________ TestStackLimit.test_failing_function _____________________
+
+self = <test_04.TestStackLimit testMethod=test_failing_function>
+
+    def test_failing_function(self):
+    
+        result = exercize.measure_stack_limit()
+    
+>       assert recursive_function(-2) == result
+E       AssertionError: assert 925 == None
+E        +  where 925 = recursive_function(-2)
+
+python_course_1604\class_01\tests\test_04.py:21: AssertionError
+___________________ TestCaptureException.test_when_no_loops ___________________
+
+self = <test_05.TestCaptureException testMethod=test_when_no_loops>
+
+    def test_when_no_loops(self):
+        has_something_to_do = self._mock_function(
+            exercize, 'has_something_to_do', return_value=False)
+    
+        do_something = self._mock_function(exercize, 'do_something')
+    
+        exercize.print_work_results()
+    
+>       has_something_to_do.assert_called_once_with()
+
+python_course_1604\class_01\tests\test_05.py:44: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+_mock_self = <MagicMock name='has_something_to_do' id='70447456'>, args = ()
+kwargs = {}, self = <MagicMock name='has_something_to_do' id='70447456'>
+msg = "Expected 'has_something_to_do' to be called once. Called 0 times."
+
+    def assert_called_once_with(_mock_self, *args, **kwargs):
+        """assert that the mock was called exactly once and with the specified
+            arguments."""
+        self = _mock_self
+        if not self.call_count == 1:
+            msg = ("Expected '%s' to be called once. Called %s times." %
+                   (self._mock_name or 'mock', self.call_count))
+>           raise AssertionError(msg)
+E           AssertionError: Expected 'has_something_to_do' to be called once. Called 0 times.
+
+.tox\py27\lib\site-packages\mock\mock.py:947: AssertionError
+__________________ TestCaptureException.test_when_some_loops __________________
+
+self = <test_05.TestCaptureException testMethod=test_when_some_loops>
+
+    def test_when_some_loops(self):
+        has_something_to_do = self._mock_function(
+            exercize, 'has_something_to_do', side_effect=iter(
+                [True, True, False]))
+    
+        do_something = self._mock_function(
+            exercize, 'do_something', side_effect=iter(range(10)))
+    
+        exercize.print_work_results()
+    
+>       has_something_to_do.assert_has_calls([mock.call()] * 3)
+
+python_course_1604\class_01\tests\test_05.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.tox\py27\lib\site-packages\mock\mock.py:969: in assert_has_calls
+    ), cause)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = AssertionError('Calls not found.\nExpected: [call(), call(), call()]\nActual: []',)
+from_value = None
+
+    def raise_from(value, from_value):
+>       raise value
+E       AssertionError: Calls not found.
+E       Expected: [call(), call(), call()]
+E       Actual: []
+
+.tox\py27\lib\site-packages\six.py:718: AssertionError
+___ TestCaptureException.test_when_has_next_give_false_after_searched_value ___
+
+self = <test_06.TestCaptureException testMethod=test_when_has_next_give_false_after_searched_value>
+
+    def test_when_has_next_give_false_after_searched_value(self):
+        has_next = self._mock_function(
+            exercize, 'has_next', side_effect=iter(
+                [True] * 10 + [False]))
+    
+        get_next = self._mock_function(
+            exercize, 'get_next', side_effect=iter(range(10)))
+    
+        result = exercize.count_until(7)
+    
+>       assert 8 == result
+E       AssertionError: assert 8 == None
+
+python_course_1604\class_01\tests\test_06.py:67: AssertionError
+__ TestCaptureException.test_when_has_next_give_false_before_searched_value ___
+
+self = <test_06.TestCaptureException testMethod=test_when_has_next_give_false_before_searched_value>
+
+    def test_when_has_next_give_false_before_searched_value(self):
+        has_next = self._mock_function(
+            exercize, 'has_next', side_effect=iter(
+                [True, True, False]))
+    
+        get_next = self._mock_function(
+            exercize, 'get_next', side_effect=iter(range(10)))
+    
+        with self.assertRaises(KeyError):
+>           exercize.count_until(7)
+E           AssertionError: KeyError not raised
+
+python_course_1604\class_01\tests\test_06.py:52: AssertionError
+___________________ TestCaptureException.test_when_no_loops ___________________
+
+self = <test_06.TestCaptureException testMethod=test_when_no_loops>
+
+    def test_when_no_loops(self):
+        has_next = self._mock_function(
+            exercize, 'has_next', return_value=False)
+    
+        get_next = self._mock_function(exercize, 'get_next')
+    
+        with self.assertRaises(KeyError):
+>           exercize.count_until(7)
+E           AssertionError: KeyError not raised
+
+python_course_1604\class_01\tests\test_06.py:38: AssertionError
+__________________ TestSetup.test_python_interpreter_version __________________
+
+self = <python_course_1604.tests.test_00.TestSetup testMethod=test_python_interpreter_version>
+
+    def test_python_interpreter_version(self):
+        actual_version, _ = subprocess.check_output(
+            ['python', '-c', 'import sys; print(sys.version)']
+        ).decode('utf8').rsplit('\n', 1)
+>       assert sys.version == actual_version
+E       AssertionError: assert '2.7.11 (v2.7... bit (AMD64)]' == '2.7.11 (v2.7....bit (AMD64)]'
+E         Skipping 69 identical leading characters in diff, use -v to show
+E           it (AMD64)]
+
+python_course_1604\tests\test_00.py:22: AssertionError
+========== 15 failed, 5 passed, 1 skipped, 10 error in 1.81 seconds ===========
+ERROR: InvocationError: 'C:\\Users\\slydon\\pythoncourse\\.tox\\py27\\Scripts\\py.test.EXE --cov=python_course_1604 --cov-report term-missing --cov-report html --cov-report xml'
+py34 inst-nodeps: C:\Users\slydon\pythoncourse\.tox\dist\python-course-1604-0.0.1.dev45.zip
+py34 installed: colorama==0.3.7,coverage==4.0.3,mock==2.0.0,pbr==1.9.1,py==1.4.31,pytest==2.9.1,pytest-cov==2.2.1,python-course-1604==0.0.1.dev45,six==1.10.0
+py34 runtests: PYTHONHASHSEED='188'
+py34 runtests: commands[0] | coverage erase
+py34 runtests: commands[1] | rm -fR .coverage .coverage.*
+py34 runtests: commands[2] | py.test --cov=python_course_1604 --cov-report term-missing --cov-report html --cov-report xml
+============================= test session starts =============================
+platform win32 -- Python 3.4.4, pytest-2.9.1, py-1.4.31, pluggy-0.3.1
+rootdir: C:\Users\slydon\pythoncourse, inifile: tox.ini
+plugins: cov-2.2.1
+collected 21 items / 10 errors
+
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\testpackage\test-requirements.txt s
+python_course_1604\class_01\tests\test_01.py F
+python_course_1604\class_01\tests\test_02.py FFF
+python_course_1604\class_01\tests\test_03.py FFFF
+python_course_1604\class_01\tests\test_04.py F
+python_course_1604\class_01\tests\test_05.py ..FF
+python_course_1604\class_01\tests\test_06.py ..FFF
+python_course_1604\tests\test_00.py F.
+--------------- coverage: platform win32, python 3.4.4-final-0 ----------------
+Name                                                           Stmts   Miss Branch BrPart  Cover   Missing
+----------------------------------------------------------------------------------------------------------
+python_course_1604\__init__.py                                     0      0      0      0   100%   
+python_course_1604\class_01\__init__.py                            0      0      0      0   100%   
+python_course_1604\class_01\exercize_01_hello_world.py             0      0      0      0   100%   
+python_course_1604\class_01\exercize_02_if_statement.py            1      0      2      0   100%   
+python_course_1604\class_01\exercize_03_capture_exception.py       2      0      4      0   100%   
+python_course_1604\class_01\exercize_04_stack_limit.py             3      0      2      0   100%   
+python_course_1604\class_01\exercize_05_while_loop.py              5      0      2      0   100%   
+python_course_1604\class_01\exercize_06_while_break_else.py        5      0      2      0   100%   
+----------------------------------------------------------------------------------------------------------
+TOTAL                                                             16      0     12      0   100%   
+Coverage HTML written to dir report/html/coverage
+Coverage XML written to file report/coverage.xml
+
+=================================== ERRORS ====================================
+____ ERROR collecting .eggs/pbr-1.9.1-py3.4.egg/pbr/tests/test_commands.py ____
+.tox\py34\lib\site-packages\py\_path\local.py:650: in pyimport
+    __import__(modname)
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\__init__.py:16: in <module>
+    import testscenarios
+E   ImportError: No module named 'testscenarios'
+______ ERROR collecting .eggs/pbr-1.9.1-py3.4.egg/pbr/tests/test_core.py ______
+.tox\py34\lib\site-packages\py\_path\local.py:650: in pyimport
+    __import__(modname)
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\__init__.py:16: in <module>
+    import testscenarios
+E   ImportError: No module named 'testscenarios'
+_____ ERROR collecting .eggs/pbr-1.9.1-py3.4.egg/pbr/tests/test_files.py ______
+.tox\py34\lib\site-packages\py\_path\local.py:650: in pyimport
+    __import__(modname)
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\__init__.py:16: in <module>
+    import testscenarios
+E   ImportError: No module named 'testscenarios'
+_____ ERROR collecting .eggs/pbr-1.9.1-py3.4.egg/pbr/tests/test_hooks.py ______
+.tox\py34\lib\site-packages\py\_path\local.py:650: in pyimport
+    __import__(modname)
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\__init__.py:16: in <module>
+    import testscenarios
+E   ImportError: No module named 'testscenarios'
+__ ERROR collecting .eggs/pbr-1.9.1-py3.4.egg/pbr/tests/test_integration.py ___
+.tox\py34\lib\site-packages\py\_path\local.py:650: in pyimport
+    __import__(modname)
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\__init__.py:16: in <module>
+    import testscenarios
+E   ImportError: No module named 'testscenarios'
+___ ERROR collecting .eggs/pbr-1.9.1-py3.4.egg/pbr/tests/test_packaging.py ____
+.tox\py34\lib\site-packages\py\_path\local.py:650: in pyimport
+    __import__(modname)
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\__init__.py:16: in <module>
+    import testscenarios
+E   ImportError: No module named 'testscenarios'
+_____ ERROR collecting .eggs/pbr-1.9.1-py3.4.egg/pbr/tests/test_setup.py ______
+.tox\py34\lib\site-packages\py\_path\local.py:650: in pyimport
+    __import__(modname)
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\__init__.py:16: in <module>
+    import testscenarios
+E   ImportError: No module named 'testscenarios'
+______ ERROR collecting .eggs/pbr-1.9.1-py3.4.egg/pbr/tests/test_util.py ______
+.tox\py34\lib\site-packages\py\_path\local.py:650: in pyimport
+    __import__(modname)
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\__init__.py:16: in <module>
+    import testscenarios
+E   ImportError: No module named 'testscenarios'
+____ ERROR collecting .eggs/pbr-1.9.1-py3.4.egg/pbr/tests/test_version.py _____
+.tox\py34\lib\site-packages\py\_path\local.py:650: in pyimport
+    __import__(modname)
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\__init__.py:16: in <module>
+    import testscenarios
+E   ImportError: No module named 'testscenarios'
+______ ERROR collecting .eggs/pbr-1.9.1-py3.4.egg/pbr/tests/test_wsgi.py ______
+.tox\py34\lib\site-packages\py\_path\local.py:650: in pyimport
+    __import__(modname)
+.eggs\pbr-1.9.1-py3.4.egg\pbr\tests\__init__.py:16: in <module>
+    import testscenarios
+E   ImportError: No module named 'testscenarios'
+================================== FAILURES ===================================
+___________________ TestHelloWorld.test_hello_world_exists ____________________
+
+self = <test_01.TestHelloWorld testMethod=test_hello_world_exists>
+
+    def test_hello_world_exists(self):
+        output = subprocess.check_output(
+                ['python', '-m',
+                 'python_course_1604.class_01.exercize_01_hello_world']
+        ).decode('utf8')
+>       assert 'Hello world!\n' == output,\
+            "Write a line that prints 'Hello world!'"
+E       AssertionError: Write a line that prints 'Hello world!'
+E       assert 'Hello world!\n' == ''
+E         - Hello world!
+
+python_course_1604\class_01\tests\test_01.py:23: AssertionError
+_______ TestIfStatement.test_when_x_is_between_min_value_and_max_value ________
+
+self = <test_02.TestIfStatement testMethod=test_when_x_is_between_min_value_and_max_value>
+
+    def test_when_x_is_between_min_value_and_max_value(self):
+>       assert 15 == exercize.clamp(15, 10, 20)
+E       AssertionError: assert 15 == None
+E        +  where None = <function clamp at 0x0000000003B6C620>(15, 10, 20)
+E        +    where <function clamp at 0x0000000003B6C620> = exercize.clamp
+
+python_course_1604\class_01\tests\test_02.py:24: AssertionError
+____________ TestIfStatement.test_when_x_is_greater_than_max_value ____________
+
+self = <test_02.TestIfStatement testMethod=test_when_x_is_greater_than_max_value>
+
+    def test_when_x_is_greater_than_max_value(self):
+>       assert 20 == exercize.clamp(50, 10, 20)
+E       AssertionError: assert 20 == None
+E        +  where None = <function clamp at 0x0000000003B6C620>(50, 10, 20)
+E        +    where <function clamp at 0x0000000003B6C620> = exercize.clamp
+
+python_course_1604\class_01\tests\test_02.py:21: AssertionError
+____________ TestIfStatement.test_when_x_is_smaller_than_min_value ____________
+
+self = <test_02.TestIfStatement testMethod=test_when_x_is_smaller_than_min_value>
+
+    def test_when_x_is_smaller_than_min_value(self):
+>       assert 10 == exercize.clamp(-10, 10, 20)
+E       AssertionError: assert 10 == None
+E        +  where None = <function clamp at 0x0000000003B6C620>(-10, 10, 20)
+E        +    where <function clamp at 0x0000000003B6C620> = exercize.clamp
+
+python_course_1604\class_01\tests\test_02.py:18: AssertionError
+_________________ TestCaptureException.test_failing_function __________________
+
+self = <test_03.TestCaptureException testMethod=test_failing_function>
+
+    def test_failing_function(self):
+        with self.assertRaises(RuntimeError):
+>           exercize.failing_function()
+E           AssertionError: RuntimeError not raised
+
+python_course_1604\class_01\tests\test_03.py:26: AssertionError
+____________ TestCaptureException.test_when_no_exception_is_raised ____________
+
+self = <test_03.TestCaptureException testMethod=test_when_no_exception_is_raised>
+
+    def test_when_no_exception_is_raised(self):
+    
+        mocked_failing_function = self._mock_function(
+            exercize, 'failing_function', return_value=None)
+    
+        result = exercize.capute_exception()
+    
+>       assert result is True
+E       AssertionError: assert None is True
+
+python_course_1604\class_01\tests\test_03.py:35: AssertionError
+__________ TestCaptureException.test_when_other_exception_is_raised ___________
+
+self = <test_03.TestCaptureException testMethod=test_when_other_exception_is_raised>
+
+    def test_when_other_exception_is_raised(self):
+    
+        mocked_failing_function = self._mock_function(
+            exercize, 'failing_function', side_effect=ValueError)
+    
+        with self.assertRaises(ValueError):
+>           exercize.capute_exception()
+E           AssertionError: ValueError not raised
+
+python_course_1604\class_01\tests\test_03.py:54: AssertionError
+___________ TestCaptureException.test_when_runtime_error_is_raised ____________
+
+self = <test_03.TestCaptureException testMethod=test_when_runtime_error_is_raised>
+
+    def test_when_runtime_error_is_raised(self):
+    
+        mocked_failing_function = self._mock_function(
+            exercize, 'failing_function', side_effect=RuntimeError)
+    
+        result = exercize.capute_exception()
+    
+>       assert result is False
+E       AssertionError: assert None is False
+
+python_course_1604\class_01\tests\test_03.py:45: AssertionError
+____________________ TestStackLimit.test_failing_function _____________________
+
+self = <test_04.TestStackLimit testMethod=test_failing_function>
+
+    def test_failing_function(self):
+    
+        result = exercize.measure_stack_limit()
+    
+>       assert recursive_function(-2) == result
+E       AssertionError: assert 925 == None
+E        +  where 925 = recursive_function(-2)
+
+python_course_1604\class_01\tests\test_04.py:21: AssertionError
+___________________ TestCaptureException.test_when_no_loops ___________________
+
+self = <test_05.TestCaptureException testMethod=test_when_no_loops>
+
+    def test_when_no_loops(self):
+        has_something_to_do = self._mock_function(
+            exercize, 'has_something_to_do', return_value=False)
+    
+        do_something = self._mock_function(exercize, 'do_something')
+    
+        exercize.print_work_results()
+    
+>       has_something_to_do.assert_called_once_with()
+
+python_course_1604\class_01\tests\test_05.py:44: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+_mock_self = <MagicMock name='has_something_to_do' id='63337024'>, args = ()
+kwargs = {}, self = <MagicMock name='has_something_to_do' id='63337024'>
+msg = "Expected 'has_something_to_do' to be called once. Called 0 times."
+
+    def assert_called_once_with(_mock_self, *args, **kwargs):
+        """assert that the mock was called exactly once and with the specified
+            arguments."""
+        self = _mock_self
+        if not self.call_count == 1:
+            msg = ("Expected '%s' to be called once. Called %s times." %
+                   (self._mock_name or 'mock', self.call_count))
+>           raise AssertionError(msg)
+E           AssertionError: Expected 'has_something_to_do' to be called once. Called 0 times.
+
+.tox\py34\lib\site-packages\mock\mock.py:947: AssertionError
+__________________ TestCaptureException.test_when_some_loops __________________
+
+self = <test_05.TestCaptureException testMethod=test_when_some_loops>
+
+    def test_when_some_loops(self):
+        has_something_to_do = self._mock_function(
+            exercize, 'has_something_to_do', side_effect=iter(
+                [True, True, False]))
+    
+        do_something = self._mock_function(
+            exercize, 'do_something', side_effect=iter(range(10)))
+    
+        exercize.print_work_results()
+    
+>       has_something_to_do.assert_has_calls([mock.call()] * 3)
+
+python_course_1604\class_01\tests\test_05.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.tox\py34\lib\site-packages\mock\mock.py:969: in assert_has_calls
+    ), cause)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = AssertionError('Calls not found.\nExpected: [call(), call(), call()]\nActual: []',)
+from_value = None
+
+>   ???
+E   AssertionError: Calls not found.
+E   Expected: [call(), call(), call()]
+E   Actual: []
+
+<string>:2: AssertionError
+___ TestCaptureException.test_when_has_next_give_false_after_searched_value ___
+
+self = <test_06.TestCaptureException testMethod=test_when_has_next_give_false_after_searched_value>
+
+    def test_when_has_next_give_false_after_searched_value(self):
+        has_next = self._mock_function(
+            exercize, 'has_next', side_effect=iter(
+                [True] * 10 + [False]))
+    
+        get_next = self._mock_function(
+            exercize, 'get_next', side_effect=iter(range(10)))
+    
+        result = exercize.count_until(7)
+    
+>       assert 8 == result
+E       AssertionError: assert 8 == None
+
+python_course_1604\class_01\tests\test_06.py:67: AssertionError
+__ TestCaptureException.test_when_has_next_give_false_before_searched_value ___
+
+self = <test_06.TestCaptureException testMethod=test_when_has_next_give_false_before_searched_value>
+
+    def test_when_has_next_give_false_before_searched_value(self):
+        has_next = self._mock_function(
+            exercize, 'has_next', side_effect=iter(
+                [True, True, False]))
+    
+        get_next = self._mock_function(
+            exercize, 'get_next', side_effect=iter(range(10)))
+    
+        with self.assertRaises(KeyError):
+>           exercize.count_until(7)
+E           AssertionError: KeyError not raised
+
+python_course_1604\class_01\tests\test_06.py:52: AssertionError
+___________________ TestCaptureException.test_when_no_loops ___________________
+
+self = <test_06.TestCaptureException testMethod=test_when_no_loops>
+
+    def test_when_no_loops(self):
+        has_next = self._mock_function(
+            exercize, 'has_next', return_value=False)
+    
+        get_next = self._mock_function(exercize, 'get_next')
+    
+        with self.assertRaises(KeyError):
+>           exercize.count_until(7)
+E           AssertionError: KeyError not raised
+
+python_course_1604\class_01\tests\test_06.py:38: AssertionError
+__________________ TestSetup.test_python_interpreter_version __________________
+
+self = <python_course_1604.tests.test_00.TestSetup testMethod=test_python_interpreter_version>
+
+    def test_python_interpreter_version(self):
+        actual_version, _ = subprocess.check_output(
+            ['python', '-c', 'import sys; print(sys.version)']
+        ).decode('utf8').rsplit('\n', 1)
+>       assert sys.version == actual_version
+E       AssertionError: assert '3.4.4 (v3.4.... bit (AMD64)]' == '3.4.4 (v3.4.4...it (AMD64)]\r'
+E         Skipping 67 identical leading characters in diff, use -v to show
+E           it (AMD64)]
+
+python_course_1604\tests\test_00.py:22: AssertionError
+========== 15 failed, 5 passed, 1 skipped, 10 error in 2.02 seconds ===========
+ERROR: InvocationError: 'C:\\Users\\slydon\\pythoncourse\\.tox\\py34\\Scripts\\py.test.EXE --cov=python_course_1604 --cov-report term-missing --cov-report html --cov-report xml'
+flake8 inst-nodeps: C:\Users\slydon\pythoncourse\.tox\dist\python-course-1604-0.0.1.dev45.zip
+flake8 installed: flake8==2.5.4,mccabe==0.4.0,pep8==1.7.0,pyflakes==1.0.0,python-course-1604==0.0.1.dev45
+flake8 runtests: PYTHONHASHSEED='188'
+flake8 runtests: commands[0] | flake8 --max-complexity=8 python_course_1604
+pylint inst-nodeps: C:\Users\slydon\pythoncourse\.tox\dist\python-course-1604-0.0.1.dev45.zip
+pylint installed: astroid==1.4.5,colorama==0.3.7,lazy-object-proxy==1.2.2,pylint==1.5.5,python-course-1604==0.0.1.dev45,six==1.10.0,wrapt==1.10.8
+pylint runtests: PYTHONHASHSEED='188'
+pylint runtests: commands[0] | pylint --reports=n --rcfile=pylint.rc python_course_1604
+___________________________________ summary ___________________________________
+ERROR:   py27: commands failed
+ERROR:   py34: commands failed
+  flake8: commands succeeded
+  pylint: commands succeeded

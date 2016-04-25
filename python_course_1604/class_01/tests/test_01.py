@@ -20,5 +20,5 @@ class TestHelloWorld(unittest.TestCase):
                 ['python', '-m',
                  'python_course_1604.class_01.exercize_01_hello_world']
         ).decode('utf8')
-        assert 'Hello world!\n' == output,\
+        assert 'Hello world!\r\n' == output,\
             "Write a line that prints 'Hello world!'"

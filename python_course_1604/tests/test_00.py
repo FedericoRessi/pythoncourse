@@ -19,4 +19,4 @@ class TestSetup(unittest.TestCase):
         actual_version, _ = subprocess.check_output(
             ['python', '-c', 'import sys; print(sys.version)']
         ).decode('utf8').rsplit('\n', 1)
-        assert sys.version == actual_version
+        assert sys.version + '\r' == actual_version

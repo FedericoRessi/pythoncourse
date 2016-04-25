@@ -22,11 +22,9 @@ def execute_commands(commands):
     iterator = iter(commands)
 
     while True:
-        # HINT: implement iteration here
-        try:
-            command = next(iterator)
-        except StopIteration:
-            break
+        # HINT: look how next function behave when sequence terminates
+
+        command = next(iterator)
 
         if command == 'ping':
             print('pong')

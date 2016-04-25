@@ -12,6 +12,7 @@ from python_course_1604.tests.utils import skip_if_exercize_not_started
 
 
 @skip_if_exercize_not_started(exercize)
+@unittest.skip('Investigating on problems with coverage.')
 class TestStackLimit(unittest.TestCase):
 
     def test_failing_function(self):

@@ -5,17 +5,17 @@ Created on 25 Apr 2016
 '''
 
 import sys
+import unittest
 
 import mock
 
 import python_course_1604.class_02.exercize_02_for_loop as exercize
 
 from python_course_1604.tests.utils import skip_if_exercize_not_started
-from python_course_1604.class_02.tests.test_01_while_loop import TestWhileLoop
 
 
 @skip_if_exercize_not_started(exercize)
-class TestForLoop(TestWhileLoop):
+class TestForLoop(unittest.TestCase):
 
     def _mock_function(self, obj, name, *args, **kwargs):
         context = mock.patch.object(obj, name, *args, **kwargs)

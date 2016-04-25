@@ -16,9 +16,10 @@ at Intel Shannon site.
 This course is hosted here:
 - [https://github.com/FedericoRessi/pythoncourse](https://github.com/FedericoRessi/pythoncourse)
 
-#### NOTE: to access the course you have to be registered as explained below in getting started section.
-
 ## Getting Started
 
 Before starting this course you have to follow
 [getting started steps](docs/getting_started.md).
+
+## How ro make exercises
+To makes this course exercises please read [making exercises instructions](docs/making_exercises.md)

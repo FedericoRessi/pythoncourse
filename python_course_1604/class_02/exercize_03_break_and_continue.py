@@ -19,16 +19,18 @@ def execute_commands(commands):
 
     Please use both continue and break to complete this exercize
     """
-
+    skip_flag = False
+    
     for command in commands:
         # HINT: implement skip and quit commands here before other commands
-        if command == 'skip':
+        if skip_flag:
+            skip_flag = False
             continue
-        
-        if command == 'quit':
+        elif command == 'skip':
+            skip_flag = True
+        elif command == 'quit':
             break
-        
-        if command == 'ping':
+        elif command == 'ping':
             print('pong')
         else:
             print('error')

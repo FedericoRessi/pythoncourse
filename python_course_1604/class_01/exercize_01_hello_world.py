@@ -6,3 +6,5 @@ Created on 6 Apr 2016
 
 # Write a line that prints 'Hello world!'
 
+
+print('Hello world!')

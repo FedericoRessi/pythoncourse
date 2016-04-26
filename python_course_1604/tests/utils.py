@@ -5,6 +5,7 @@ Created on 7 Apr 2016
 '''
 
 import unittest
+import subprocess
 
 
 def dont_skip(obj):
@@ -17,9 +18,9 @@ def skip_if_exercize_not_started(exercize):
         path = path[:-1]
         assert path.endswith('.py')
 
-    from sh import git
+    diff = subprocess.check_output(
+        ["git", '--no-pager', 'diff', 'master', '--', path])
 
-    diff = str(git('--no-pager', 'diff', 'master', '--', path))
     if not diff:
         return unittest.skip('Exercize not started: ' + exercize.__file__)
 

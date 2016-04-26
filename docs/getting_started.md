@@ -77,13 +77,32 @@ python3.4 --version
 
 ### Linux
 
-All Linux distributions comes with Bash. Git instead could be installed using
-distribution specific package manager. For example in Ubuntu 14.04 you can type
-following:
+Python 2.7 should be the default Python for all modern Linux
+distributions.
+
+In some distributions there could be any package for Python 3.4.
+In such case you should be able to compile it following
+[this documentation](https://docs.python.org/3.4/using/unix.html).
+Please note that a C compiler and some other development tool could be required.
+
+#### Ubuntu 14.04 LTS
+In **Ubuntu 14.04** you can install required packages simply by typing:
 
 ```
 sudo apt-get install python2.7 python2.7-dev python3.4 python3.4-dev
 ```
+
+#### Ubuntu 16.04 LTS
+**Ubuntu 16.04** cames with python3.5 instead of python3.4. I have found [this
+shourt guide](http://tecadmin.net/install-python-3-4-on-ubuntu-and-linuxmint/)
+to install Python 3.4 on that distro. Because of obscures reasons it could be
+that web page is blocked by your proxy. In such case please contact with
+the organizers of the course for help.
+
+#### CentOS/RHEL & Fedora
+
+I have found [this guide](http://tecadmin.net/install-python-3-4-on-centos-rhel-fedora/)
+for Red Hat distros family. I never tryied it.
 
 ### OSX, Windows and other operative systems
 
@@ -214,7 +233,10 @@ and create a [new pull request](https://github.com/FedericoRessi/pythoncourse/pu
 On the left side in the drop down box you have to chose your working branch.
 On the right side in the drop down box you have to leave it as "master" branch.
 
-## Step 9: complete exercizes
+**VERY IMPORTANT: never merge your changes into master branch:** students are supposed to
+push changes only to their own working branches.
+
+## Step 10: complete exercizes
 
 You can now start working on exercises found on folder
 [python_course_1604](../python_course_1604/class_01).
@@ -234,3 +256,34 @@ an then and pussh them to origin repository in your new branch.
 git commit
 git push
 ```
+
+**For more details how to make exercises please look at [this document](making_exercises.md).**
+
+## Step 11: keep your repo up to date
+
+It happens that something is updated on this project to solve problems or add more exercises.
+You should try to keep your branch up to date your branch with baster branch you can merge
+or rebase.
+
+### Merge with master branch
+
+```
+git fetch --all
+git merge origin/master 
+```
+
+### Rebase master branch
+
+```
+git fetch --all
+git rebase origin/master 
+```
+
+If you chose to rebase be prepared to have to force pushing future changes
+using _-f_ flag:
+
+```git push -f```
+
+**[GitHub support for rebasing](https://help.github.com/articles/about-git-rebase/)
+could be weird if you have an open pull request for such branch because it alters
+the history of your branch.**

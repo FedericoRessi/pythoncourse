@@ -36,3 +36,10 @@ def count_until(match_value):
 
     Please use while, break, else construct.
     """
+    times = 0
+    while has_next():
+        val = get_next()
+        times += 1
+        if val == match_value:
+            return times
+    raise KeyError

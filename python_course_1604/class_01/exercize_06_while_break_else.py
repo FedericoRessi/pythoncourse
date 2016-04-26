@@ -2,6 +2,7 @@
 Created on 6 Apr 2016
 
 @author: Federico Ressi <federico.ressi@intel.com>
+@modified by: Gustav Stedje <gustav.stedje@intel.com>
 '''
 
 # Complete count_until function to sarisfy documented behaviour
@@ -36,3 +37,11 @@ def count_until(match_value):
 
     Please use while, break, else construct.
     """
+    longvariablename = 0
+    while has_next():
+        longvariablename += 1
+        if get_next() == match_value:
+            break
+    else:
+        raise KeyError
+    return longvariablename

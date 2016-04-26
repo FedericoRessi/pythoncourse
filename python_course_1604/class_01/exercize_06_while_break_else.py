@@ -42,10 +42,7 @@ def count_until(match_value):
         loops += 1
         if get_next() == match_value:
             break
-    
+
     else:
         raise KeyError
-
-
     return loops
-    

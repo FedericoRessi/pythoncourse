@@ -27,3 +27,6 @@ def print_work_results():
 
     Please use while construct.
     """
+
+    while has_something_to_do():
+        print(do_something())

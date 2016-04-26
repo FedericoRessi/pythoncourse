@@ -22,9 +22,13 @@ def measure_stack_limit():
 
 def recursive_function(level):
     """Function that recursively calls himseld with level + 1 as parameter
-
     It returns level when stack limit is reached.
     It returns the result of recursive call if limit is not reached.
 
     Hints: when stack limit is reached RuntimeError is raised.
     """
+
+    try:
+        return recursive_function(level + 1)
+    except RuntimeError:
+        return level

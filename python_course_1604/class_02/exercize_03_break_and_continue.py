@@ -22,8 +22,11 @@ def execute_commands(commands):
 
     for command in commands:
         # HINT: implement skip and quit commands here before other commands
-
-        if command == 'ping':
+        if command == 'skip':
+            continue
+        elif command == 'ping':
             print('pong')
+        elif command == 'quit':
+            break
         else:
             print('error')

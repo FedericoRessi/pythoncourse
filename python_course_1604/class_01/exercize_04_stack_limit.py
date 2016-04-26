@@ -34,6 +34,3 @@ def recursive_function(level):
         return level
     else:
         level += 1
-
-x = measure_stack_limit()
-print(x)

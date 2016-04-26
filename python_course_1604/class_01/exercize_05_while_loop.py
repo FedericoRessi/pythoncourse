@@ -2,6 +2,7 @@
 Created on 6 Apr 2016
 
 @author: Federico Ressi <federico.ressi@intel.com>
+@edited by: Gustav.Stedje <gustav.stedje@intel.com>
 '''
 
 # Complete print_work_results function to sarisfy documented behaviour
@@ -27,3 +28,5 @@ def print_work_results():
 
     Please use while construct.
     """
+    while has_something_to_do():
+        print(do_something())

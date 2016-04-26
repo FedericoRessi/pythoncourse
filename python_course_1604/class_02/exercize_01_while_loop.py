@@ -2,6 +2,7 @@
 Created on 6 Apr 2016
 
 @author: Federico Ressi <federico.ressi@intel.com>
+@modified by: Gustav Stedje <gustav.stedje@intel.com>
 '''
 
 
@@ -23,3 +24,8 @@ def print_primes(max_number):
     To iterate numbers please use while statement.
     To look if a number is prime it calls is_prime function.
     """
+    i = 1
+    while i < max_number:
+        if is_prime(i):
+            print(i)
+        i += 1

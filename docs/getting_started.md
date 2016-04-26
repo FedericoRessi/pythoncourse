@@ -193,8 +193,8 @@ env | grep proxy
 
 ## Step 7: install Tox
 
-Tox is used to execute tests to your exercise are properly written.
-To install and keep up to date Tox and PIP you have to execute following:
+Tox is used to validate that your exercise are properly written.
+To install it you have to execute following:
 ```
 pip install -U --user tox
 ```
@@ -203,10 +203,14 @@ Finally check that tox is working:
 tox --version
 ```
 
-### Tox command not found?
+### Linux and OSX
 **An issue was reported on Fedora23 and OSX**: after installing as specified
-above tox command was not available. In such case you could uninstall it and
-then reinstall it as super user:
+above Tox command can be unavailable. An investigation about the cause of the
+problem is still pending but I could bet the reason is that Tox script
+installation folder is not on the PATH environment variable.
+
+An easy solution I testes (worked on OSX) is uninstalling it and
+then reinstalling it as super user:
 ```
 sudo pip uninstall tox
 sudo https_proxy=$https_proxy pip install -U tox

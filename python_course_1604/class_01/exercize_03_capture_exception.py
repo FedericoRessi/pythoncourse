@@ -28,7 +28,5 @@ def capute_exception():
         failing_function()
     except RuntimeError:
         return False
-    except:
-        raise
     else:
         return True

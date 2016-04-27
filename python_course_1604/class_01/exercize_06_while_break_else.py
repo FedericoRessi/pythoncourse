@@ -36,3 +36,15 @@ def count_until(match_value):
 
     Please use while, break, else construct.
     """
+
+    num_loops = 0
+
+    while has_next():
+        num_loops += 1
+        if get_next() == match_value:
+            break
+
+    else:
+        raise KeyError
+
+    return num_loops

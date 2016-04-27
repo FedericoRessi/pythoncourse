@@ -16,6 +16,7 @@ def measure_stack_limit():
     It returns the number of recoursive functions calls before stack limit is
     reached.
     '''
+
     return recursive_function(0)
 
 

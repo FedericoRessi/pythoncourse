@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/FedericoRessi/pythoncourse.svg?branch=master)](https://travis-ci.org/FedericoRessi/pythoncourse) [![Coverage Status](https://coveralls.io/repos/github/FedericoRessi/pythoncourse/badge.svg?branch=master)](https://coveralls.io/github/FedericoRessi/pythoncourse?branch=master)
+
 # Intel Shannon Python Course
 
 ## Overview

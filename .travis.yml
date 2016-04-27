@@ -9,8 +9,11 @@ virtualenv:
   system_site_packages: true
 
 install:
-  - pip install -U tox coveralls
+  - pip install -U pip tox setuptools coveralls
 
 script:
+  - git remote remove origin || true
+  - git remote add origin https://github.com/FedericoRessi/pythoncourse.git
+  - git fetch --all
   - tox
   - coveralls --rcfile=.coveragerc

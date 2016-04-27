@@ -28,3 +28,7 @@ def recursive_function(level):
 
     Hints: when stack limit is reached RuntimeError is raised.
     """
+    try:
+        return recursive_function(level+1)
+    except RuntimeError:
+        return level

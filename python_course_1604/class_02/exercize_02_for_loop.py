@@ -27,4 +27,4 @@ def print_primes(max_number):
         if is_prime(i):
             print(i)
         else:
-            continue
+            pass

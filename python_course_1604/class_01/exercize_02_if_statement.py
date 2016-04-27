@@ -16,3 +16,11 @@ def clamp(value, min_value, max_value):
 
     Please use if, elif and else keywords
     """
+    if value < min_value:
+        return min_value
+
+    elif value > max_value:
+        return max_value
+
+    else:
+        return value

@@ -21,8 +21,6 @@ def execute_commands(commands):
 
     iterator = iter(commands)
 
-    skip_flag = False
-
     while True:
         # HINT: look how next function behave when sequence terminates
 
@@ -31,12 +29,7 @@ def execute_commands(commands):
         except StopIteration:
             break
 
-        if skip_flag:
-            skip_flag = False
-            continue
-        elif command == 'skip':
-            skip_flag = True
-        elif command == 'ping':
+        if command == 'ping':
             print('pong')
         else:
             print('error')

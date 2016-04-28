@@ -4,9 +4,10 @@ Created on 6 Apr 2016
 @author: Federico Ressi <federico.ressi@intel.com>
 '''
 
+import sys
+
 # Please modify below function to implement quit and skip command to behava as
 # speicified in the function documentation.
-
 
 def execute_commands(commands):
     """ Executes given commands.
@@ -19,11 +20,25 @@ def execute_commands(commands):
 
     Please use both continue and break to complete this exercize
     """
-
+ 
     for command in commands:
         # HINT: implement skip and quit commands here before other commands
 
         if command == 'ping':
             print('pong')
+        elif command == 'quit':
+            break
+        elif command == 'skip':
+            continue
         else:
             print('error')
+
+
+def main():
+    lis = sys.argv
+    lis.pop(0)
+    execute_commands(lis)
+
+
+if __name__ == "__main__":
+    main()

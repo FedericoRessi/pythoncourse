@@ -4,7 +4,7 @@ Created on 6 Apr 2016
 @author: Federico Ressi <federico.ressi@intel.com>
 '''
 
-# Complete clamp function to sarisfy documented behaviour
+# Complete clamp function to satisfy documented behaviour
 
 
 def clamp(value, min_value, max_value):
@@ -16,3 +16,11 @@ def clamp(value, min_value, max_value):
 
     Please use if, elif and else keywords
     """
+
+    if(value < min_value):
+        return min_value
+    if(value > max_value):
+        return max_value
+    return value
+
+print (clamp(3, 4, 5))

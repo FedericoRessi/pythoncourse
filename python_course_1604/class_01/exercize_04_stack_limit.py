@@ -2,6 +2,7 @@
 Created on 6 Apr 2016
 
 @author: Federico Ressi <federico.ressi@intel.com>
+@modified by: Gustav Stedje <gustav.stedje@intel.com>
 '''
 
 # Complete recursive_func function to sarisfy documented behaviour
@@ -28,3 +29,7 @@ def recursive_function(level):
 
     Hints: when stack limit is reached RuntimeError is raised.
     """
+    try:
+        return recursive_function(level+1)
+    except RuntimeError:
+        return level

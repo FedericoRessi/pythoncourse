@@ -2,6 +2,7 @@
 Created on 6 Apr 2016
 
 @author: Federico Ressi <federico.ressi@intel.com>
+@modified by: Gustav Stedje <gustav.stedje@intel.com>
 '''
 
 # Please modify below function to implement quit and skip command to behava as
@@ -19,11 +20,18 @@ def execute_commands(commands):
 
     Please use both continue and break to complete this exercize
     """
-
+    loopskip = False
     for command in commands:
         # HINT: implement skip and quit commands here before other commands
-
-        if command == 'ping':
+        if loopskip:
+            loopskip = False
+            continue
+        if command == 'quit':
+            break
+        elif command == 'skip':
+            loopskip = True
+            continue
+        elif command == 'ping':
             print('pong')
         else:
             print('error')

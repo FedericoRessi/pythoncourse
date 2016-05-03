@@ -23,3 +23,9 @@ def print_primes(max_number):
     To iterate numbers please use while statement.
     To look if a number is prime it calls is_prime function.
     """
+    prime_num_count = 1
+    while prime_num_count < max_number:
+        if is_prime(prime_num_count):
+            print(prime_num_count)
+        prime_num_count += 1
+

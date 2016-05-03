@@ -24,9 +24,17 @@ def execute_commands(commands):
     while True:
         # HINT: look how next function behave when sequence terminates
 
-        command = next(iterator)
+        try:
+            command = next(iterator)
 
-        if command == 'ping':
-            print('pong')
-        else:
-            print('error')
+            if command == 'quit':
+                break
+            elif command == 'skip':
+                next(iterator)
+            elif command == 'ping':
+                print('pong')
+            else:
+                print('error')
+
+        except StopIteration:
+            break

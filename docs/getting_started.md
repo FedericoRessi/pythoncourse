@@ -78,12 +78,18 @@ python3.4 --version
 ### Linux
 
 All Linux distributions comes with Bash. Git instead could be installed using
-distribution specific package manager. For example in Ubuntu 14.04 you can type
-following:
+distribution specific package manager.
+
+For example in **Ubuntu 14.04** you can install required packages by typing:
 
 ```
 sudo apt-get install python2.7 python2.7-dev python3.4 python3.4-dev
 ```
+
+In some **other Linux** distribution there could be any package for Python 3.4.
+In such case you should be able to compile it following
+[this documentation](https://docs.python.org/3.4/using/unix.html).
+Please note that a C compiler and some other development tool could be required.
 
 ### OSX, Windows and other operative systems
 
@@ -234,3 +240,32 @@ an then and pussh them to origin repository in your new branch.
 git commit
 git push
 ```
+
+## Step 10: keep your repo up to date
+
+It happens that something is updated on this project to solve problems or add more exercises.
+You should try to keep your branch up to date your branch with baster branch you can merge
+or rebase.
+
+### Merge with master branch
+
+```
+git fetch --all
+git merge origin/master 
+```
+
+### Rebase master branch
+
+```
+git fetch --all
+git rebase origin/master 
+```
+
+If you chose to rebase be prepared to have to force pushing future changes
+using _-f_ flag:
+
+```git push -f```
+
+**[GitHub support for rebasing](https://help.github.com/articles/about-git-rebase/)
+could be weird if you have an open pull request for such branch because it alters
+the history of your branch.**

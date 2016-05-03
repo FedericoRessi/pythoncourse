@@ -11,7 +11,7 @@ Created on 6 Apr 2016
 def failing_function():
     """Function thar raises a RuntimeError
     """
-        raise RuntimeError
+    raise RuntimeError
 
 
 def capute_exception():

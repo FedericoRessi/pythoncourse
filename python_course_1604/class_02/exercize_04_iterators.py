@@ -29,8 +29,6 @@ def execute_commands(commands):
         except StopIteration:
             break
 
-        command = next(iterator)
-
         if command == 'ping':
             print('pong')
         else:

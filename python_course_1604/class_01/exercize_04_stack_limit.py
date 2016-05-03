@@ -30,6 +30,7 @@ def recursive_function(level):
     """
 
     try:
-        return measure_stack_limit(level + 1)
+        return recursive_function(level + 1)
     except RuntimeError:
         return level
+

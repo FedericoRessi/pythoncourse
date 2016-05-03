@@ -11,7 +11,7 @@ Created on 6 Apr 2016
 def failing_function():
     """Function thar raises a RuntimeError
     """
-    	raise RuntimeError
+        raise RuntimeError
 
 
 def capute_exception():
@@ -25,8 +25,9 @@ def capute_exception():
     Please use try: except: else: construct.
     """
     try:
-    	failing_function()
+        failing_function()
     except RuntimeError:
-    	return False
+        return False
     else:
-    	return True
+        return True
+

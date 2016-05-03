@@ -41,9 +41,10 @@ def count_until(match_value):
     while has_next():
         number += 1
         x = get_next()
-        if x = match_value:
+        if match_value == x:
             break;
         else:
             raise KeyError
 
     return number
+

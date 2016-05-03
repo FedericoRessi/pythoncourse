@@ -19,6 +19,10 @@ def execute_commands(commands):
     In all other it prints 'error'
 
     Please use both continue and break to complete this exercize
+
+    GSt: Could not figure out how this was supposed to work until I looked
+         at the test function and realised you were feeding an array of
+         commands.
     """
     loopskip = False
     for command in commands:

@@ -2,6 +2,7 @@
 Created on 6 Apr 2016
 
 @author: Federico Ressi <federico.ressi@intel.com>
+@modified by: Gustav Stedje <gustav.stedje@intel.com>
 '''
 
 # Please modify below function to implement quit and skip command to behava as
@@ -17,16 +18,19 @@ def execute_commands(commands):
     The function exits when given sequence of commands terminates.
 
     Please use both continue and break to complete this exercize
+
+    GSt: Cannot figure out how to use continue in this exercise but it works
+         without it
     """
-
     iterator = iter(commands)
-
     while True:
         # HINT: look how next function behave when sequence terminates
-
-        command = next(iterator)
-
-        if command == 'ping':
-            print('pong')
+        try:
+            command = next(iterator)
+        except StopIteration:
+            break
         else:
-            print('error')
+            if command == 'ping':
+                print('pong')
+            else:
+                print('error')

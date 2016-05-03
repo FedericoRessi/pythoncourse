@@ -37,12 +37,12 @@ def count_until(match_value):
     Please use while, break, else construct.
     """
     times = 0
-    while True:
-        if has_next():
-            val = get_next()
-            times += 1
-            if val == match_value:
-                return times
-        else:
+    while has_next():
+        val = get_next()
+        times += 1
+        if val == match_value:
             break
-    raise KeyError
+    else:
+        raise KeyError
+
+    return times

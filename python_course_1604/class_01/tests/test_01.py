@@ -19,6 +19,6 @@ class TestHelloWorld(unittest.TestCase):
         output = subprocess.check_output(
                 ['python', '-m',
                  'python_course_1604.class_01.exercize_01_hello_world']
-        ).decode('utf8')
-        assert 'Hello world!\n' == output,\
+        ).decode('utf8').strip()
+        assert 'Hello world!' == output,\
             "Write a line that prints 'Hello world!'"

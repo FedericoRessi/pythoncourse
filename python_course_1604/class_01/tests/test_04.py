@@ -8,6 +8,8 @@ Created on 6 Apr 2016
 
 import unittest
 
+import socket
+
 import python_course_1604.class_01.exercize_04_stack_limit as exercize
 
 from python_course_1604.tests.utils import skip_if_exercize_not_started

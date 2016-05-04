@@ -2,6 +2,8 @@
 Created on 6 Apr 2016
 
 @author: fressi
+@edited by: gstedje
+    - excluded opensuse host due to mysterious coverage issue
 '''
 
 import unittest
@@ -12,7 +14,9 @@ from python_course_1604.tests.utils import skip_if_exercize_not_started
 
 
 @skip_if_exercize_not_started(exercize)
-@unittest.skip('It brokes coverage.')
+@unittest.skipIf(
+    unittest.skipIf(socket.gethostname() == 'omalleypark-1'))
+
 class TestStackLimit(unittest.TestCase):
 
     def test_failing_function(self):

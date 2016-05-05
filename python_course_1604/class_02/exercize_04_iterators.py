@@ -4,8 +4,6 @@ Created on 6 Apr 2016
 @author: Federico Ressi <federico.ressi@intel.com>
 '''
 
-import sys
-
 # Please modify below function to implement quit and skip command to behava as
 # speicified in the function documentation.
 
@@ -26,20 +24,9 @@ def execute_commands(commands):
     while True:
         # HINT: look how next function behave when sequence terminates
 
-        try:
-            command = next(iterator)
-            if command == 'ping':
-                print('pong')
-            else:
-                print('error')
-        except StopIteration:
-                break 
+        command = next(iterator)
 
-def main():
-    lis = sys.argv
-    lis.pop(0)
-    execute_commands(lis)
-
-
-if __name__ == "__main__":
-    main()
+        if command == 'ping':
+            print('pong')
+        else:
+            print('error')

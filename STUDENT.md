@@ -1,3 +1,3 @@
 # Student details
 
-- Full name: Kim Jones 
+- Full name: <please write here your full name>

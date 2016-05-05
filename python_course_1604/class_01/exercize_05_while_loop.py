@@ -27,9 +27,3 @@ def print_work_results():
 
     Please use while construct.
     """
-
-    c = 0
-    while has_something_to_do(in) is False:
-        c = c + 1
-
-    print("%s", do_something())

@@ -3,7 +3,7 @@ Created on 6 Apr 2016
 
 @author: Federico Ressi <federico.ressi@intel.com>
 '''
-
+import sys
 
 def is_prime(number):
     """ returns True if given number is prime
@@ -20,6 +20,22 @@ def is_prime(number):
 def print_primes(max_number):
     """ Prints al prime numbers that are smaller than max_number
 
-    To iterate numbers please use for statement with range function.
+    To iterate numbers please use while statement.
     To look if a number is prime it calls is_prime function.
     """
+
+    print "Primes < %d: \n" % max_number
+    for i in range (max_number):
+        if is_prime(i) is True:
+            print "%d " % i
+
+    print "\n"
+
+
+def main():
+    for j in sys.argv[1:]:
+        print_primes(int(j))
+
+
+if __name__ == "__main__":
+    main()

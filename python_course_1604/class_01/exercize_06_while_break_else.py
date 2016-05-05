@@ -18,7 +18,7 @@ def has_next():
 def get_next():
     """Function that do something.
     """
-    return "some_value"
+    return "25"
 
 
 def count_until(match_value):
@@ -36,3 +36,13 @@ def count_until(match_value):
 
     Please use while, break, else construct.
     """
+    c = 0;
+    while has_next() is False:
+        c = c + 1
+
+        if get_next() == 25:
+            break
+    else:
+        raise KeyError
+
+    return c 

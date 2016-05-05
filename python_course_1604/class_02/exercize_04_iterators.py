@@ -4,8 +4,8 @@ Created on 6 Apr 2016
 @author: Federico Ressi <federico.ressi@intel.com>
 '''
 
-# Please modify below function to implement quit and skip command to behava as
-# speicified in the function documentation.
+# Please modify below function to make it behaving as speicified in the
+# function documentation.
 
 
 def execute_commands(commands):
@@ -16,14 +16,13 @@ def execute_commands(commands):
 
     The function exits when given sequence of commands terminates.
 
-    Please use both continue and break to complete this exercize
+    Please use break to complete this exercise
     """
 
     iterator = iter(commands)
 
     while True:
-        # HINT: look how next function behave when sequence terminates
-
+        # HINT: implement iteration here
         command = next(iterator)
 
         if command == 'ping':

@@ -21,7 +21,7 @@ def measure_stack_limit():
 
 
 def recursive_function(level):
-    """Function that recursively calls himseld with level + 1 as parameter
+    """Function that recursively calls himself with level + 1 as parameter
 
     It returns level when stack limit is reached.
     It returns the result of recursive call if limit is not reached.

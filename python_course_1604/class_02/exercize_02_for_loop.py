@@ -6,8 +6,8 @@ Created on 6 Apr 2016
 
 
 def is_prime(number):
-    """ returns True if given number is prime
-    """
+    """ It returns True if given number is prime."""
+
     i = 2
     while i < number:
         if number % i == 0:
@@ -16,6 +16,9 @@ def is_prime(number):
 
     return True
 
+
+# Please modify below function to make it behaving as speicified in the
+# function documentation.
 
 def print_primes(max_number):
     """ Prints al prime numbers that are smaller than max_number

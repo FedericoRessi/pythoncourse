@@ -8,16 +8,18 @@ Created on 6 Apr 2016
 
 
 def has_something_to_do():
-    """Function that return True when there is still something to do and False
-    in all other cases.
+    """ Function that returns:
+        - True when there is still something to do
+        - False in all other cases.
     """
 
     return True
 
 
 def do_something():
-    """Function that do something.
+    """ Function that does something and that returns some result.
     """
+
     return "some_result"
 
 
@@ -27,5 +29,6 @@ def print_work_results():
 
     Please use while construct.
     """
+
     while(has_something_to_do()):
         print(do_something())

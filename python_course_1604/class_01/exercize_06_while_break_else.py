@@ -38,11 +38,11 @@ def count_until(match_value):
 
     Please use while-break-else construct.
     """
+    i = 0
     while has_next():
         temp = get_next()
-        i = 0
         if temp == match_value:
-            i = i + 1
+            i += 1
             break
 
     else:

@@ -20,7 +20,7 @@ def capute_exception():
         False when RuntimeException is raised by failing_function.
 
     If any else exception is raised, then it must let it pass on.
-    Please use try: except: else: construct.
+    Please use try-except-else construct.
     """
     try:
         failing_function()

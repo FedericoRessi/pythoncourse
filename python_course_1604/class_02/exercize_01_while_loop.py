@@ -28,9 +28,6 @@ def print_primes(max_number):
     """
     j = 1
     while j < max_number:
-        if is_prime(j) == True:
+        if is_prime(j):
             print ('Prime number is ' + str(j))
         j = j + 1
-
-
-

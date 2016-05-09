@@ -12,6 +12,8 @@ def failing_function():
     """Function thar raises a RuntimeError
     """
     raise RuntimeError
+
+
 def capute_exception():
     """Function that calls failing_function and caputes RuntimeError exception
 

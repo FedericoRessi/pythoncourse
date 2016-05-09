@@ -41,8 +41,8 @@ def count_until(match_value):
     i = 0
     while has_next():
         temp = get_next()
+        i = i+1
         if temp == match_value:
-            i += 1
             break
 
     else:

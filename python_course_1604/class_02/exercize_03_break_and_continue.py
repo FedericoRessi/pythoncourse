@@ -34,4 +34,3 @@ def execute_commands(commands):
             print('pong')
         else:
             print('error')
-

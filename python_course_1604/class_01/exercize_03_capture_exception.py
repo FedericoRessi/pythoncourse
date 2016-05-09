@@ -30,4 +30,3 @@ def capute_exception():
         return False
     else:
         return True
-

@@ -47,4 +47,3 @@ def count_until(match_value):
         raise KeyError
 
     return number
-

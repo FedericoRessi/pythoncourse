@@ -26,4 +26,3 @@ def print_primes(max_number):
     for i in range(1, max_number):
         if is_prime(i):
             print(i)
-

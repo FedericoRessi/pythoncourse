@@ -22,4 +22,3 @@ def clamp(value, min_value, max_value):
         return max_value
     else:
         return value
-

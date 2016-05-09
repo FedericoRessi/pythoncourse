@@ -27,6 +27,6 @@ def print_primes(max_number):
     To iterate numbers please use for statement with range function.
     To look if a number is prime it calls is_prime function.
     """
-    for n in range(2, max_number):
-        if is_prime(n):
-            print ('Prime Number is ' + str(n))
+    for num in range(2, max_number):
+        if is_prime(num):
+            print ('Prime Number is ' + str(num))

@@ -20,6 +20,7 @@ def is_prime(number):
 # Please modify below function to make it behaving as speicified in the
 # function documentation.
 
+
 def print_primes(max_number):
     """ Prints al prime numbers that are smaller than max_number
 

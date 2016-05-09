@@ -22,10 +22,17 @@ def execute_commands(commands):
     Please use both continue and break to complete this exercise
     """
 
+    skip_command = False
     for command in commands:
         # HINT: threat skip and quit commands here
-
-        if command == 'ping':
+        if skip_command:
+            skip_command = False
+            continue
+        elif command == 'quit':
+            break
+        elif command == 'skip':
+            skip_command = True
+        elif command == 'ping':
             print('pong')
         else:
             print('error')

@@ -64,7 +64,7 @@ def try_execute_transaction_operations(operations, max_attempts):
 
         except RuntimeError:
             # failed operation
-            continue # retry!
+            continue  # retry!
 
         else:
             return True  # transaction has been completed with success

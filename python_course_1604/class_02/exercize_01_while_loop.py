@@ -26,3 +26,11 @@ def print_primes(max_number):
     To iterate numbers please use while statement.
     To look if a number is prime it calls is_prime function.
     """
+    j = 1
+    while j < max_number:
+        if is_prime(j) == True:
+            print ('Prime number is ' + str(j))
+        j = j + 1
+
+
+
